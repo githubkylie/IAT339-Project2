@@ -1,7 +1,7 @@
 
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
   */
   @font-face{
     font-family: 'DINPro-Regular';
@@ -184,7 +184,7 @@ nav.nav_link {
   color: white;
   background-color: #5588a3;
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.5s;
 }
 
@@ -229,11 +229,11 @@ div input#radio6{
 }
 .mag{
   width:100%;
-  
+
 }
 .mag:hover{
-  opacity: 0.5; 
-  
+  opacity: 0.5;
+
 }
 
 ol .num_list{
@@ -250,8 +250,59 @@ section .top2{
 nav .main_nav {
   display:inline;
   color:#145374;
-  
+
 }
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
+.radiobutton{
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 16px;
+}
+.radiobutton input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.radiobutton:hover input ~ .checkmark{
+  background-color: #ccc;
+}
+.radiobutton input:checked ~ .checkmark{
+  background-color: #546d5a;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobutton input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobutton .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #546d5a;
+}
+
 
 @media screen and (max-width:60em){
   nav .main_nav {
@@ -360,9 +411,9 @@ padding-bottom:2em;
 
  .cart1 {
    border-top:1px #145374 solid;
- 
+
    display: block;
- 
+
  }
 
  .cart div{
@@ -372,8 +423,8 @@ padding-bottom:2em;
   .cart2 {
    display: block;
    border-top:1px #145374 solid;
- 
-  
+
+
  }
 
 
@@ -401,7 +452,7 @@ padding-bottom:2em;
   }
 
   .shop1 div{
-  
+
   width:100%;
 }
 
@@ -411,7 +462,7 @@ padding-bottom:2em;
   width:100%;
 }
 
-.shop3 div{  
+.shop3 div{
 
   width:100%;
 }
@@ -449,7 +500,7 @@ margin-top: 2em;
   width:100%;
 }
 
-.shop3 div{  
+.shop3 div{
   padding:50px;
   width:100%;
 }
@@ -533,7 +584,7 @@ table{
 }
 td{
 
-  padding-left:6em; 
+  padding-left:6em;
 }
 
 tr{
@@ -659,6 +710,3 @@ div.payment1 div input{
     width:90%;
   }
 }
-
-
-
