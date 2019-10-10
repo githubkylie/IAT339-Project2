@@ -78,6 +78,24 @@ p a{
   font-family: 'DINPro-Regular';
 
 }
+.css-selector{
+  width: 99%;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+.css-selector h4{
+  margin-top:0.5em;
+  margin-bottom:0;
+}
+.css-selector p{
+  margin-top: 0;
+}
+.sample-code{
+  background-color: #d8d8d8;
+  color: #000000;
+  padding:0;
+}
+
 
 @media screen and (max-width:50em){
   nav.top a{
@@ -241,7 +259,7 @@ ol .num_list{
   margin:1em;
 }
 
-section .top2{
+section .top1{
   margin-top: 2em;
 }
 
@@ -252,7 +270,50 @@ nav .main_nav {
   color:#145374;
 
 }
-
+/*https://codepen.io/lihs/pen/MEvzxr*/
+#first-name-input[type="text"]{
+  border: 1px solid #909090;
+  display:block;
+  opacity: 0.5;
+  width:50em;
+  height: 2.5em;
+  margin-bottom: 20px;
+}
+#first-name-input[type="text"]:focus{
+  outline: none;
+  border: 2px solid #5588a3;
+  color: #5588a3;
+  width:50em;
+  height: 2.5em;
+}
+#last-name-input[type="text"]{
+  border: 1px solid #909090;
+  display:block;
+  opacity: 0.5;
+  width:50em;
+  height: 2.7em;
+  margin-bottom: 20px;
+}
+#last-name-input[type="text"]:focus{
+  outline: none;
+  border: 2px solid #5588a3;
+  color: #5588a3;
+  width:50em;
+  height: 2.7em;
+}
+.my-form textarea{
+  padding-bottom: 50px;
+  border: 1px solid #909090;
+  display:block;
+  opacity: 0.5;
+  width:50em;
+}
+.my-form textarea:focus{
+  outline: none;
+  border: 2px solid #5588a3;
+  color: #5588a3;
+  width:50em;
+}
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
 .radiobutton{
  display: block;
@@ -511,14 +572,6 @@ margin-top: 2em;
 }
 
 }
-
-
-
-
-
-
-
-
 
 .container1{
   display:flex;

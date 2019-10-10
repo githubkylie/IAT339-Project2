@@ -40,45 +40,33 @@
 
 		<div class="header3">
 			<h3 >In-text link</h3>
-			<p>This is a <a  href="index.html"> in-text link</a></p>
+			<p>This is a <a  href="#"> in-text link</a></p>
 		</div>
 
-		<div class="coding">
-			<h4>Code</h4>
-			<code>&lt;p&gt;This is a&lt;a  href="index.html"&gt;in-text link&lt;/a&gt;&lt;/p&gt;</code>
-		</div>
+			<h4>Sample Code</h4>
+			<div class="sample-code">
+				<code>&lt;p&gt;This is a&lt;a  href="index.html"&gt;in-text link&lt;/a&gt;&lt;/p&gt;</code>
+			</div>
 
 		<div class="header3">
 			<h3>Navigation Link</h3>
 		</div>
-		<div class="top2" >
+		<div class="top1" >
 			<nav class="main_nav">
-				<a class="main_nav" href="#interactive_elements">#Interactive Elements</a>
+				<a class="main_nav" href="#interactive_elements">About</a>
 			</nav>
 		</div>
 
 		<h4>CSS Selectors</h4>
 		<p>.main_nav</p>
 
-		<div class="coding">
-			<h4>Code</h4>
-			<div class="coding1">
-			<code>&lt;div class="top2"&gt;</code>
-		</div>
-		<div class="coding2">
-			<code>&lt;nav class="main_nav"&gt;</code>
-		</div>
-			<div class="coding3">
-			<code>&lt;nav class="main_nav" href="#interactive_elements"&gt;#Interactive Elements
-			&lt;/a &gt;</code>
-		</div>
-		<div class="coding4">
-			<code>&lt;/nav&gt;</code>
-		</div>
-		<div class="coding5">
-			<code>&lt;/div&gt;</code>
-		</div>
-
+			<h4>Sample Code</h4>
+			<div class="sample-code">
+			<code>&lt;div class="top1"&gt;<br>
+			&lt;nav class="main_nav"&gt;<br>
+			&lt;nav class="main_nav" href="About.html"&gt;About&lt;/a &gt;<br>
+			&lt;/nav&gt;<br>
+			&lt;/div&gt;</code>
 		</div>
 
 
@@ -97,20 +85,46 @@
 		<div class="header3">
 			<h3>Text Input Field with Label</h3>
 		</div>
-		<div class="code">
-			<label for="email-input">Email</label>
-			<input id="email-input" type="text">
+		<form class="my-form">
+			<div class="container">
+			<div>
+			<label for="first-name-input">First Name</label>
+			<input id="first-name-input" type="text" name="first-name">
 		</div>
-
-<div class="coding">
-			<h4>Code</h4>
-			<div class="coding1">
-			<code>&lt;label for=&quot;email-input&quot;&gt;Email&lt;/label&gt;</code>
+			<div>
+			<label for="last-name-input">Last Name</label>
+			<input id="last-name-input" type="text" name="last-name">
+			<div class="css-selector">
+			<h4>CSS selector</h4>
+			<p>#first-name-input[type="text"]</p>
+			<h4>Sample code</h4>
+				<div class="sample-code">
+			<!-- IAT339 P1-Style_Guide_Template -->
+			<code>
+					&lt;label for="first-name-input">First Name&lt;/label&gt;<br>
+					&lt;input id="firstname-input" type="text" name="first-name"&gt;
+			</code>
 		</div>
-		<div class="coding2">
-			<code>&lt;input id=&quot;email-input&quot; type=&quot;text&quot;&gt;</code>
+			</div>
+			</div>
+			<div>
+				<label for="text-area">Message</label>
+				<textarea id="text-area" name="message"></textarea>
+				<div class="css-selector">
+				<h4>CSS selector</h4>
+				<p>.my-form textarea</p>
+				<h4>Sample code</h4>
+					<div class="sample-code">
+				<!-- IAT339 P1-Style_Guide_Template -->
+				<code>
+						&lt;label for="text-area">Message&lt;/label&gt;<br>
+						&lt;textarea id="text-area" name="message"&gt;&lt;/textarea&gt;
+				</code>
+			</div>
+				</div>
 		</div>
-		</div>
+	</div>
+	</form>
 
 
 		<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
@@ -139,16 +153,6 @@
 		      </div>
 		        </div>
 		      </div>
-
-
-<div class="coding">
-			<h4>Code</h4>
-<div class="coding1">
-			<code>&lt;label for=&quot;radio1&quot; class=&quot;check&quot;&gt;&lt;input id=&quot;radio1&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot; checked=&quot;checked&quot;/&gt;Option 1&lt;/label&gt;
-</code></div>
-<div class="coding2">
-			<code>&lt;label for=&quot;radio2&quot; class=&quot;check&quot;&gt;&lt;input id=&quot;radio2&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot; checked=&quot;checked&quot;/&gt;Option 2&lt;/label&gt;</code></div>
-		</div>
 
 
 		<div class="header3">
