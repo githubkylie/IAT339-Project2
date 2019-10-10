@@ -280,7 +280,7 @@ nav .main_nav {
   background-color: #ccc;
 }
 .radiobutton input:checked ~ .checkmark{
-  background-color: #546d5a;
+  background-color: #5588a3;
 }
 .checkmark:after {
   content: "";
@@ -300,7 +300,7 @@ nav .main_nav {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #546d5a;
+	background: #5588a3;
 }
 
 
