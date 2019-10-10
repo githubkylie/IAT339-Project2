@@ -18,27 +18,24 @@
     background:#e8e8e8;
   }
 
-
-
   h1{
     color:#00334e;
+    font-size:30px;
   }
 
   div.header h2 {
     margin-top:2.5em;
     width:100%;
     padding-bottom:1em;
-    border-top-width: 0.15rem;
-    border-top-style: solid;
-    border-top-color: #d8d8d8;
     border-bottom-width: 0.15rem;
     border-bottom-style: solid;
     border-bottom-color: #d8d8d8;
     color:#145374;
   }
 
-  #headercolor{
+h2{
    color:#145374;
+   font-size:25px;
  }
 
  div.header3 {
@@ -48,10 +45,12 @@
 
 h3{
   color:#5588a3;
+  font-size:20px;
 }
 
 h4 {
   color:#87c0cd;
+  font-size:15px;
 }
 
 
