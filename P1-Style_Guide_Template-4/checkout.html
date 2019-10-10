@@ -18,7 +18,7 @@
 
 <section id="navigation">
 <div class="top1">
-<nav class="main_nav">        
+<nav class="main_nav">
   <a class="main_nav" href="index.html">STYLE GUIDE</a>
   <a class="main_nav" href="shop.html">SHOP</a>
   <a class="main_nav" href="cart.html">CART</a>
@@ -29,7 +29,7 @@
 
 <div class="header">
     <h2>Checkout</h2>
-   
+
   </div>
 
 
@@ -86,253 +86,109 @@
 
  <section class="subtotal">
  <h3>Checkout Cart</h3>
- <table>
-   <tbody>
-     <tr>
-       <th>Sutotal</th>
-       <td>CA$24.00</td>
-     </tr>
-     <tr>
-       <th>Shipping</th>
-       <td>-</td>
-     </tr>
-     <tr>
-       <th>Estimated sales tax</th>
-       <td>-</td>
-     </tr>
-     <tfoot>
-       <tr>
-         <th>Estimated Total</th>
-         <td>CA$24.00</td>
-       </tr>
-     </tfoot>
- 
- </table>
+ <section id="checkout-cart">
+ <div class="container">
+ <h3>Checkout Cart</h3>
+ <!-- https://codepen.io/justinklemm/pen/zAdoJ -->
+ <div class="shopping-cart">
+ <div class="column-labels">
+   <label class="product-image">Item</label>
+   <label class="product-details">Description</label>
+   <label class="product-price">Unit Price</label>
+   <label class="product-quantity">Quantity</label>
+   <label class="product-line-price">Subtotal</label>
+   <label class="product-removal">Removal</label>
+ </div>
 
-
-<div class="button-checkout">
- <a class="button-sub" href="#">CHECKOUT</a>
-</div>
- </section>
-
-<div class="coding">
-      <h4>Code</h4>
-      <div class="coding1">
-<code>&lt;h3&gt;Payment Form&lt;/h3&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;div class=&quot;payment&quot;&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-   &lt;label for=&quot;radio3&quot; class=&quot;check&quot;&gt;&lt;input id=&quot;radio3&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot; checked=&quot;checked&quot;/&gt;MasterCard&lt;/label&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-   &lt;label for=&quot;radio4&quot; class=&quot;check&quot;&gt;&lt;input id=&quot;radio4&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot; checked=&quot;checked&quot;/&gt;Visa&lt;/label&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-   &lt;label for=&quot;radio5&quot; class=&quot;check&quot;&gt;&lt;input id=&quot;radio5&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot; checked=&quot;checked&quot;/&gt;Debit&lt;/label&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-   &lt;label for=&quot;radio6&quot; class=&quot;check&quot;&gt;&lt;input id=&quot;radio6&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot; checked=&quot;checked&quot;/&gt;Paypal&lt;/label&gt;
-   </code>
-    </div>
-<div class="coding1">
-  <code>
-
- &lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
- &lt;h3&gt;Payment Information&lt;/h3&gt;
- </code>
-    </div>
-<div class="coding1">
-  <code>
-
-&lt;form class=&quot;yform&quot;&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-&lt;div class=&quot;payment1&quot;&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;div class=&quot;pay1&quot;&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;label for=&quot;form-text&quot;&gt;Name on Card&lt;/label&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;input id=&quot;form-text&quot; name=&quot;form-text&quot; type=&quot;text&quot; placeholder=&quot;Your Name&quot;&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-&lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-&lt;div class=&quot;pay2&quot;&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;label for=&quot;form-textarea1&quot;&gt;Card Number&lt;/label&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;input id=&quot;form-textarea1&quot; disabled=&quot;disabled&quot; placeholder=&quot;xxxxxxxxxxxxx&quot;&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-&lt;div class=&quot;pay3&quot;&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;label for=&quot;form-textarea2&quot;&gt;Expiry Date(MM/YY)&lt;/label&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;input id=&quot;form-textarea2&quot; disabled=&quot;disabled&quot; placeholder=&quot;MM/YY&quot;&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;div class=&quot;pay4&quot;&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;label for=&quot;form-textarea3&quot;&gt;Security Code&lt;/label&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;input id=&quot;form-textarea3&quot; disabled=&quot;disabled&quot; placeholder=&quot;xxx&quot;&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;div class=&quot;pay5&quot;&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;label for=&quot;form-textarea4&quot;&gt;Card Number&lt;/label&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;input id=&quot;form-textarea4&quot; disabled=&quot;disabled&quot; placeholder=&quot;xxxxxxxxxxxxx&quot;&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;div class=&quot;pay6&quot;&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;label for=&quot;form-textarea5&quot;&gt;Card Number&lt;/label&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-    &lt;input id=&quot;form-textarea5&quot; disabled=&quot;disabled&quot; placeholder=&quot;xxxxxxxxxxx&quot;&gt;
-    </code>
-    </div>
-<div class="coding1">
-  <code>
-
-  &lt;/div&gt;
-  </code>
-    </div>
-<div class="coding1">
-  <code>
-
-&lt;/div&gt;
-</code>
-    </div>
-<div class="coding1">
-  <code>
-
-
-&lt;/form&gt;
-</code>
+ <div class="product">
+   <div class="product-image">
+     <img src="images/product2.jpg" width="100" height="130" alt="green cover notebook">
+   </div>
+   <div class="product-details">Exercise Book</div>
+   <div class="product-price">$3.00</div>
+   <div class="product-quantity">
+     <!-- https://codepen.io/komarovdesign/pen/PPRbgb -->
+     <div class="quantity">
+     <input type="number" value="2" min="1" max="9" step="1">
+   </div>
+   </div>
+   <div class="product-line-price">$6.00</div>
+   <div class="product-removal">
+     <!-- https://icon-library.net/icon/x-icon-png-21.html -->
+     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
+   <input type="button" value = "Remove">
    </div>
  </div>
+
+ <div class="product">
+   <div class="product-image">
+     <!--https://www.papersmiths.co.uk/collections/notepads-sketchbooks/products/passionjournal-wellness-->
+     <img src="images/product1.jpg" width="100" height="130" alt="green cover journal">
+   </div>
+   <div class="product-details">Wellness Journal</div>
+   <div class="product-price">$10.00</div>
+   <div class="product-quantity">
+     <div class="quantity">
+     <input type="number" value="2" min="1" max="9" step="1">
+   </div>
+ </div>
+   <div class="product-line-price">$20.00</div>
+   <div class="product-removal">
+     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
+     <input type="button" value = "Remove">
+   </div>
+ </div>
+</div>
+     <div class="totals">
+       <div class="totals-item">
+         <label>Subtotal</label>
+         <div class="totals-value" id="cart-subtotal">$26.00</div>
+       </div>
+       <div class="totals-item">
+         <label>GST(5%)</label>
+         <div class="totals-value" id="cart-gst">$1.30</div>
+       </div>
+       <div class="totals-item">
+         <label>PST(7%)</label>
+         <div class="totals-value" id="cart-pst">$1.82</div>
+       </div>
+       <div class="totals-item">
+         <label>Shipping</label>
+         <div class="totals-value" id="cart-shipping">$12.00</div>
+       </div>
+       <div class="totals-item totals-item-total ">
+         <label>Total</label>
+         <div class="totals-value" id="cart-total">$41.12</div>
+       </div>
+       <div class="proceed">
+       <input type="button" value = "Proceed to Checkout">
+       <!--<button class="checkout">Proceed to Checkout</button>-->
+     </div>
+     </div>
+
+     <div class="css-selector">
+     <h4>CSS selector</h4>
+     <p>#checkout-cart, .shopping-cart, .column-labels, .products, .product-image, .product-details, .product-price, .product-removal, .totals, .totals-item, .proceed</p>
+     <h4>Sample code</h4>
+       <div class="sample-code">
+     <!-- IAT339 P1-Style_Guide_Template -->
+     <code>
+         &lt;section id="checkout-cart"&gt;<br>
+         &nbsp;&lt;div class="shopping-cart"&gt;<br>
+         &nbsp;&lt;div class="column-labels"&gt;<br>
+         &nbsp;&nbsp;&lt;label class="product-image">Item&lt;/label&gt;<br>
+         &nbsp;&lt;/div&gt;<br>
+         &nbsp;&lt;/div&gt;<br>
+         &lt;/section&gt;
+     </code>
+   </div>
+     </div>
+
+   </div>
+ </section>
+
 
 
 <section id="citations">

@@ -94,9 +94,115 @@ p a{
   color: #000000;
   padding:1em;
   padding-left: 0;
+}
+.column-labels{
+  display:flex;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(90,90,90);
+  margin-left: 0;
+  width:100%;
+}
+.product{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(90,90,90);
+  margin-left: 0;
+  width:100%;
 
 }
+.product-image{
+  flex:2;
+}
+.product-details{
+  flex:3;
+}
+.product-price{
+  flex:2;
+}
+.product-quantity{
+  flex:2;
+}
+.product-line-price{
+  flex:2;
+}
+.product-removal{
+  flex:1;
+}
 
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  padding-left: 25px;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.product-list{
+  display:flex;
+}
+#Basic_Branding_Ideas{
+  margin-top: 60px;
+}
+.totals-item{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cart-subtotal{
+  padding-left: 80px;
+}
+#cart-gst{
+  padding-left: 86px;
+}
+#cart-pst{
+  padding-left: 86px;
+}
+#cart-shipping{
+  padding-left: 80px;
+}
+.totals-item-total label{
+  font-size: 20px;
+  color: #546d5a;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+#cart-total{
+  font-size: 20px;
+  color: #546d5a;
+  padding-top: 15px;
+  padding-left: 80px;
+}
+.proceed{
+  padding-top: 15px;
+  display:flex;
+  justify-content: flex-end;
+}
 
 @media screen and (max-width:50em){
   nav.top a{
