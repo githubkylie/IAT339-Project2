@@ -6,7 +6,7 @@
 
   body {
     max-width: 100%;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Helvetica, sans-serif;
     letter-spacing: 0.015em;
     margin: 5em;
     background:#e8e8e8;
@@ -69,8 +69,6 @@ nav.top a:focus {
 p a{
   color:#145374;
   font-size:16px;
-  font-family: 'DINPro-Regular', Helvetica, sans-serif;
-
 }
 .css-selector{
   width: 99%;
@@ -218,17 +216,11 @@ p a:focus {
 
 }
 
-
-
 a {
   text-decoration: none;
 }
 
-
-
 nav ul {
-  font-family: 'DINPro-Regular';
-
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -236,7 +228,6 @@ nav ul {
 }
 
 nav li {
-  font-family: 'DINPro-Regular';
   color:#5588a3;
   display: block;
   float: left;
@@ -255,12 +246,10 @@ nav li a {
 
 nav li:hover {
   color:#00334e;
-  font-family: 'DINPro-Bold';
   cursor: pointer;
 }
 
 nav ul li ul {
- font-family: 'DINPro-Bold';
  visibility: hidden;
  opacity: 0;
  min-width: 5rem;
@@ -273,7 +262,6 @@ nav ul li ul {
 
 nav ul li:hover > ul,
 nav ul li ul:hover {
-  font-family: 'DINPro-Regular';
   visibility: visible;
   opacity: 1;
   display: block;
@@ -465,7 +453,9 @@ nav .main_nav {
 	border-radius: 50%;
 	background: #5588a3;
 }
-
+.bold p{
+  font-weight: bold;
+}
 
 @media screen and (max-width:60em){
   nav .main_nav {
@@ -753,11 +743,6 @@ tr{
   border-top-color: black;
 }
 
-div p{
-  font-family: 'DINPro-Bold';
-
-}
-
 
 
 figure img.color{
@@ -790,7 +775,6 @@ div.color{
 }
 
 div.art p {
-  font-family: 'DINPro-Regular';
   width:35%;
 }
 
@@ -802,32 +786,25 @@ div.art img{
 
 @media screen and (max-width:60em){
   div.art p {
-    font-family: 'DINPro-Regular';
     width:100%;
   }
 }
 
 @media screen and (max-width:40em){
   div.art p {
-    font-family: 'DINPro-Regular';
     width:80%;
   }
 }
 
 .payment{
-  font-family: 'DINPro-Bold';
 }
 
 div.payment1{
   padding:16px;
-  font-family: 'DINPro-Bold';
-
 }
 
 div.payment1 div{
   margin-bottom:1em;
-  font-family: 'DINPro-Bold';
-
 }
 
 div.payment1 div input{
