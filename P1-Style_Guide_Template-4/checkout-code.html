@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>ANOTHER ESCAPE-CHECKOUT</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>ANOTHER ESCAPE</h1>
+  </header>
+
+<section id="navigation">
+<div class="top1">
+<nav class="main_nav">
+  <a class="main_nav" href="index.html">STYLE GUIDE</a>
+  <a class="main_nav" href="shop.html">SHOP</a>
+  <a class="main_nav" href="cart.html">CART</a>
+   <a class="main_nav" href="checkout.html">CHECKOUT</a>
+</nav>
+ </div>
+</section>
+
+<div class="header">
+    <h2>Checkout</h2>
+
+  </div>
+
+
+<h3>Payment Form</h3>
+  <div class="payment">
+   <label for="radio3" class="check"><input id="radio3" name="radio" type="radio" class="radio" checked="checked"/>MasterCard</label>
+
+   <label for="radio4" class="check"><input id="radio4" name="radio" type="radio" class="radio" checked="checked"/>Visa</label>
+
+   <label for="radio5" class="check"><input id="radio5" name="radio" type="radio" class="radio" checked="checked"/>Debit</label>
+
+   <label for="radio6" class="check"><input id="radio6" name="radio" type="radio" class="radio" checked="checked"/>Paypal</label>
+ </div>
+
+ <h3>Payment Information</h3>
+<form class="yform">
+<div class="payment1">
+  <div class="pay1">
+    <label for="form-text">Name on Card</label>
+    <input id="form-text" name="form-text" type="text" placeholder="Your Name">
+</div>
+
+<div class="pay2">
+    <label for="form-textarea1">Card Number</label>
+    <input id="form-textarea1" type="text" placeholder="xxxxxxxxxxxxx">
+  </div>
+
+<div class="pay3">
+    <label for="form-textarea2">Expiry Date(MM/YY)</label>
+    <input id="form-textarea2" type="text" placeholder="MM/YY">
+  </div>
+
+  <div class="pay4">
+    <label for="form-textarea3">Security Code</label>
+    <input id="form-textarea3" type="text" placeholder="xxx">
+  </div>
+
+  <div class="pay5">
+    <label for="form-textarea4">Card Number</label>
+    <input id="form-textarea4" type="text" placeholder="xxxxxxxxxxxxx">
+  </div>
+
+  <div class="pay6">
+    <label for="form-textarea5">Card Number</label>
+    <input id="form-textarea5" type="text" placeholder="xxxxxxxxxxx">
+  </div>
+</div>
+
+
+
+</form>
+
+
+
+ <section class="subtotal">
+ <h3>Checkout Cart</h3>
+ <section id="checkout-cart">
+ <div class="container">
+ <h3>Checkout Cart</h3>
+ <!-- https://codepen.io/justinklemm/pen/zAdoJ -->
+ <div class="shopping-cart">
+ <div class="column-labels">
+   <label class="product-image">Item</label>
+   <label class="product-details">Description</label>
+   <label class="product-price">Unit Price</label>
+   <label class="product-quantity">Quantity</label>
+   <label class="product-line-price">Subtotal</label>
+   <label class="product-removal">Removal</label>
+ </div>
+
+ <div class="product">
+   <div class="product-image">
+     <img id=water src="images/water_volume.jpeg" alt="The Water Volume"  height="300" >
+   </div>
+   <div class="product-details">The Water Volume</div>
+   <div class="product-price">$12.00</div>
+   <div class="product-quantity">
+     <!-- https://codepen.io/komarovdesign/pen/PPRbgb -->
+     <div class="quantity">
+     <input type="number" value="2" min="1" max="9" step="1">
+   </div>
+   </div>
+   <div class="product-line-price">$12.00</div>
+   <div class="product-removal">
+     <!-- https://icon-library.net/icon/x-icon-png-21.html -->
+     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
+   <input type="button" value = "Remove">
+   </div>
+ </div>
+
+ <div class="product">
+   <div class="product-image">
+     <!--https://www.papersmiths.co.uk/collections/notepads-sketchbooks/products/passionjournal-wellness-->
+    <img src="images/frozen_volume.jpg" alt="The Frozen Volume" height="300">
+   </div>
+   <div class="product-details">The Frozen Volume</div>
+   <div class="product-price">$12.00</div>
+   <div class="product-quantity">
+     <div class="quantity">
+     <input type="number" value="2" min="1" max="9" step="1">
+   </div>
+ </div>
+   <div class="product-line-price">$12.00</div>
+   <div class="product-removal">
+     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
+     <input type="button" value = "Remove">
+   </div>
+ </div>
+</div>
+     <div class="totals">
+       <div class="totals-item">
+         <label>Subtotal</label>
+         <div class="totals-value" id="cart-subtotal">$48.00</div>
+       </div>
+       <div class="totals-item">
+         <label>GST(5%)</label>
+         <div class="totals-value" id="cart-gst">$2.40</div>
+       </div>
+       <div class="totals-item">
+         <label>PST(7%)</label>
+         <div class="totals-value" id="cart-pst">$3.36</div>
+       </div>
+       <div class="totals-item">
+         <label>Shipping</label>
+         <div class="totals-value" id="cart-shipping">$12.00</div>
+       </div>
+       <div class="totals-item totals-item-total ">
+         <label>Total</label>
+         <div class="totals-value" id="cart-total">$65.76</div>
+       </div>
+       <div class="proceed">
+       <input type="button" value = "Proceed to Checkout">
+       <!--<button class="checkout">Proceed to Checkout</button>-->
+     </div>
+     </div>
+
+     <div class="css-selector">
+     <h4>CSS selector</h4>
+     <p>#checkout-cart, .shopping-cart, .column-labels, .products, .product-image, .product-details, .product-price, .product-removal, .totals, .totals-item, .proceed</p>
+     <h4>Sample code</h4>
+       <div class="sample-code">
+     <!-- IAT339 P1-Style_Guide_Template -->
+     <code>
+         &lt;section id="checkout-cart"&gt;<br>
+         &nbsp;&lt;div class="shopping-cart"&gt;<br>
+         &nbsp;&lt;div class="column-labels"&gt;<br>
+         &nbsp;&nbsp;&lt;label class="product-image">Item&lt;/label&gt;<br>
+         &nbsp;&lt;/div&gt;<br>
+         &nbsp;&lt;/div&gt;<br>
+         &lt;/section&gt;
+     </code>
+   </div>
+     </div>
+
+   </div>
+ </section>
+
+
+
+<section id="citations">
+  <h2 id="cita">Citations</h2>
+
+  <ul>
+    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">Google Font</a></li>
+    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a></li>
+
+  <li> W3schools.com. (2019). <strong> HTML Table  </strong>. Retrieved from <a href="https://www.w3schools.com/html/html_tables.asp">URL</a></li>
+
+ <li> Yelp.com. (2019).<strong> HTML Forms </strong>. Retrieved from <a href="https://www.yelp.com/styleguide#forms" >URL</a></li>
+  </ul>
+</section>
+
+
+
+</body>
+</html>
