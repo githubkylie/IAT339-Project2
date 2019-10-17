@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>ANOTHER ESCAPE-CART</title>
+  <title>ANOTHER ESCAPE-CHECKOUT</title>
 
   <link href="css/main.css" rel="stylesheet">
 
@@ -13,107 +13,184 @@
 <body>
 
   <header>
-   <h1>ANOTHER ESCAPE</h1>
- </header>
+    <h1>ANOTHER ESCAPE</h1>
+  </header>
 
- <section id="navigation">
-  <div class="top1">
-    <nav class="main_nav">
-      <a class="main_nav" href="#">STYLE GUIDE</a>
-      <a class="main_nav" href="shop.html">SHOP</a>
-      <a class="main_nav" href="cart.html">CART</a>
-      <a class="main_nav" href="checkout.html">CHECKOUT</a>
-    </nav>
-  </div>
-
-
+<section id="navigation">
+<div class="top1">
+<nav class="main_nav">
+  <a class="main_nav" href="index.html">STYLE GUIDE</a>
+  <a class="main_nav" href="shop.html">SHOP</a>
+  <a class="main_nav" href="cart.html">CART</a>
+   <a class="main_nav" href="checkout.html">CHECKOUT</a>
+</nav>
+ </div>
 </section>
 
-<div class="header3">
-<h3>Your Items</h3>
-</div>
-<div class="cart">
-
-
-  <div class="cart1">
-    <div class="cart_img">
-      <img id=water src="images/water_volume.jpeg" alt="The Water Volume"  height="300" >
-    </div>
-
-
-    <div class="cart_text">
-      <p>The Water Volume</p>
-    </div>
-
-    <div class="realprice">
-      <p>Price: CA $12.00</p>
-    </div>
-
-    <div class="qty">
-      <P>QTY:1</P>
-    </div>
-
-    <div class="realtotal">
-      <p>Total: CA $12.00</p>
-    </div>
+<div class="header">
+    <h2>Checkout</h2>
 
   </div>
 
 
+<h3>Payment Form</h3>
+  <div class="payment">
+  
 
-  <div class="cart2">
+   <label class="radiobutton">MasterCard
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
 
-    <div class="cart_img">
-      <img src="images/frozen_volume.jpg" alt="The Frozen Volume" height="300">
-    </div>
+            <label class="radiobutton">Visa
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+
+             <label class="radiobutton">Debit
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+
+             <label class="radiobutton">Paypal
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
 
 
+ </div>
 
-    <div class="cart_text">
-      <p>The Frozen Volume</p>
-    </div>
-    <div class="realprice">
-     <p>Price: CA $12.00</p>
-   </div>
-   <div class="qty">
-    <P>QTY: 1 </p>
-    </div>
-    <div class="realtotal">
-      <p>TotalCA $12.00</p>
-    </div>
+ <h3>Payment Information</h3>
+<form class="yform">
+<div class="payment1">
+  <div class="pay1">
+    <label for="form-text">Name on Card</label>
+    <input id="form-text" name="form-text" type="text" placeholder="Your Name">
+</div>
+
+<div class="pay2">
+    <label for="form-textarea1">Card Number</label>
+    <input id="form-textarea1" type="text" placeholder="xxxxxxxxxxxxx">
+  </div>
+
+<div class="pay3">
+    <label for="form-textarea2">Expiry Date(MM/YY)</label>
+    <input id="form-textarea2" type="text" placeholder="MM/YY">
+  </div>
+
+  <div class="pay4">
+    <label for="form-textarea3">Security Code</label>
+    <input id="form-textarea3" type="text" placeholder="xxx">
+  </div>
+
+  <div class="pay5">
+    <label for="form-textarea4">Card Number</label>
+    <input id="form-textarea4" type="text" placeholder="xxxxxxxxxxxxx">
+  </div>
+
+  <div class="pay6">
+    <label for="form-textarea5">Card Number</label>
+    <input id="form-textarea5" type="text" placeholder="xxxxxxxxxxx">
   </div>
 </div>
 
-<section class="subtotal">
+
+
+</form>
+
+
+
+ <section class="subtotal">
+
+ <section id="checkout-cart">
+ <div class="container">
  <h3>Checkout Cart</h3>
- <table>
-   <tbody>
-     <tr>
-       <th>Sutotal</th>
-       <td>CA$12.00</td>
-     </tr>
-     <tr>
-       <th>Shipping</th>
-       <td>-</td>
-     </tr>
-     <tr>
-       <th>Estimated sales tax</th>
-       <td>-</td>
-     </tr>
-     <tfoot>
-       <tr>
-         <th>Estimated Total</th>
-         <td>CA$24.00</td>
-       </tr>
-     </tfoot>
+ <!-- https://codepen.io/justinklemm/pen/zAdoJ -->
+ <div class="shopping-cart">
+ <div class="column-labels">
+   <label class="product-image">Item</label>
+   <label class="product-details">Description</label>
+   <label class="product-price">Unit Price</label>
+   <label class="product-quantity">Quantity</label>
+   <label class="product-line-price">Subtotal</label>
+   <label class="product-removal">Removal</label>
+ </div>
 
-   </table>
+ <div class="product">
+   <div class="product-image">
+     <img id=water src="images/water_volume.jpeg" alt="The Water Volume"  height="300" >
+   </div>
+   <div class="product-details">The Water Volume</div>
+   <div class="product-price">$12.00</div>
+   <div class="product-quantity">
+     <!-- https://codepen.io/komarovdesign/pen/PPRbgb -->
+     <div class="quantity">
+     <input type="number" value="2" min="1" max="9" step="1">
+   </div>
+   </div>
+   <div class="product-line-price">$12.00</div>
+   <div class="product-removal">
+     <!-- https://icon-library.net/icon/x-icon-png-21.html -->
+     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
+   <input type="button" value = "Remove">
+   </div>
+ </div>
 
+ <div class="product">
+   <div class="product-image">
+     <!--https://www.papersmiths.co.uk/collections/notepads-sketchbooks/products/passionjournal-wellness-->
+    <img src="images/frozen_volume.jpg" alt="The Frozen Volume" height="300">
+   </div>
+   <div class="product-details">The Frozen Volume</div>
+   <div class="product-price">$12.00</div>
+   <div class="product-quantity">
+     <div class="quantity">
+     <input type="number" value="2" min="1" max="9" step="1">
+   </div>
+ </div>
+   <div class="product-line-price">$12.00</div>
+   <div class="product-removal">
+     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
+     <input type="button" value = "Remove">
+   </div>
+ </div>
+</div>
+     <div class="totals">
+       <div class="totals-item">
+         <label>Subtotal</label>
+         <div class="totals-value" id="cart-subtotal">$48.00</div>
+       </div>
+       <div class="totals-item">
+         <label>GST(5%)</label>
+         <div class="totals-value" id="cart-gst">$2.40</div>
+       </div>
+       <div class="totals-item">
+         <label>PST(7%)</label>
+         <div class="totals-value" id="cart-pst">$3.36</div>
+       </div>
+       <div class="totals-item">
+         <label>Shipping</label>
+         <div class="totals-value" id="cart-shipping">$12.00</div>
+       </div>
+       <div class="totals-item totals-item-total ">
+         <label>Total</label>
+         <div class="totals-value" id="cart-total">$65.76</div>
+       </div>
+       <div class="proceed">
+       
+       <a class="button-sub" href="#">Proceed to Checkout</a>
+       <!--<button class="checkout">Proceed to Checkout</button>-->
+     </div>
+     </div>
 
-   <div class="button-checkout">
-     <a class="button-sub" href="checkout.html">CHECKOUT</a>
+     
+
    </div>
  </section>
+ 
+
 
 
 <section id="citations">
@@ -121,12 +198,12 @@
 
   <ul>
     <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">Google Font</a></li>
-    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a></li>
 
-    <li>  <strong>[ALL figures.]</strong>(n.d) Retrieved from<a href="https://anotherescape.com">URL</a></li>
+  <li> W3schools.com. (2019). <strong> HTML Table  </strong>. Retrieved from <a href="https://www.w3schools.com/html/html_tables.asp">URL</a></li>
 
+ <li> Yelp.com. (2019).<strong> HTML Forms </strong>. Retrieved from <a href="https://www.yelp.com/styleguide#forms" >URL</a></li>
   </ul>
-
 </section>
 
 

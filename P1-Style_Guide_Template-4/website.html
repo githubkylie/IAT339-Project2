@@ -1,425 +1,153 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html lang="en">
 
 <head>
 
 	<meta charset="utf-8">
-	<title>ANOTHER ESCAPE</title>
-
-	<link rel="stylesheet" href="css/normalize.css">
+	<title>Another Escape</title>
 	<link href="css/main.css" rel="stylesheet">
-	<!-- https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file -->
-	<style>
-	@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
-	</style>
+
 </head>
 
 <body>
 
 	<header>
-		<h1>ANOTHER ESCAPE</h1>
-	</header>
-
-	<section id="navigation">
-		<div class="top1" >
-			<nav class="main_nav">
-				<a class="main_nav" href="#interactive_elements">INTERACTIVE ELEMENTS</a>
-				<a class="main_nav" href="#text_elements">TEXT ELEMENTS</a>
-				<a class="main_nav" href="#combined_elements">COMBINED ELEMENTS</a>
-				<a class="main_nav" href="product_listing.html">PRODUCT LISTING</a>
-				<a class="main_nav" href="checkout.html">CHECKOUT</a>
-			</nav>
-		</div>
-
-
-	</section>
-
-	<!-- INTERACTIVE ELEMENTS SECTION // -->
-	<section id="interactive_elements">
-
-		<div class="header">
-			<h2>Interactive Elements</h2>
-		</div>
-
-		<div class="header3">
-			<h3 >In-text link</h3>
-			<p>This is an <a href="#"> in-text link</a>.</p>
-		</div>
-
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-				<code>&lt;p&gt;This is a&lt;a  href="#"&gt;in-text link&lt;/a&gt;&lt;/p&gt;</code>
+		<div class="head">
+			<div class="head_logo">
+				<a href="index.html">
+					<h1>ANOTHER ESCAPE</h1>
+				</a>
 			</div>
 
-		<div class="header3">
-			<h3>Navigation Link</h3>
-		</div>
-		<div class="top1" >
-			<nav class="main_nav">
-				<a class="main_nav" href="#">ABOUT</a>
-			</nav>
-		</div>
 
-		<h4>CSS Selectors</h4>
-		<p>.main_nav</p>
-
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-			<code>&lt;div class="top1"&gt;<br>
-			&lt;nav class="main_nav"&gt;<br>
-			&lt;nav class="main_nav" href="#"&gt;ABOUT&lt;/a &gt;<br>
-			&lt;/nav&gt;<br>
-			&lt;/div&gt;</code>
-		</div>
-
-
-
-
-		<div class="header3">
-			<h3 id="sibmit">Submit/Reset Buttons</h3>
-		</div>
-		<a class="button-sub" href="#">Submit</a>
-
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-			<code>&lt;a class="button-sub" href="#"&gt;Submit &lt;/a &gt;</code>
-		</div>
-
-		<div class="header3">
-			<h3>Text Input Field with Label</h3>
-		</div>
-		<form class="my-form">
-			<div class="container">
-			<div>
-			<label for="first-name-input">First Name</label>
-			<input id="first-name-input" type="text" name="first-name">
-		</div>
-			<div>
-			<label for="last-name-input">Last Name</label>
-			<input id="last-name-input" type="text" name="last-name">
-			<div class="css-selector">
-			<h4>CSS selector</h4>
-			<p>#first-name-input[type="text"]</p>
-			<h4>Sample code</h4>
-				<div class="sample-code">
-			<!-- IAT339 P1-Style_Guide_Template -->
-			<code>
-					&lt;label for="first-name-input">First Name&lt;/label&gt;<br>
-					&lt;input id="firstname-input" type="text" name="first-name"&gt;
-			</code>
-		</div>
-			</div>
-			</div>
-			<div>
-				<label for="text-area">Message</label>
-				<textarea id="text-area" name="message"></textarea>
-				<div class="css-selector">
-				<h4>CSS selector</h4>
-				<p>.my-form textarea</p>
-				<h4>Sample code</h4>
-					<div class="sample-code">
-				<!-- IAT339 P1-Style_Guide_Template -->
-				<code>
-						&lt;label for="text-area">Message&lt;/label&gt;<br>
-						&lt;textarea id="text-area" name="message"&gt;&lt;/textarea&gt;
-				</code>
-			</div>
+			<section id="navigation">
+				<div class="top1">
+					<nav class="main_nav">
+						<a class="main_nav" href="#story">FEATURED STORIES</a>
+						<a class="main_nav" href="shop.html">SHOP</a>
+						<a class="main_nav" href="cart.html">CART</a>
+						<a class="main_nav" href="checkout.html">CHECKOUT</a>
+					</nav>
 				</div>
-		</div>
-	</div>
-	</form>
+			</section>
 
 
-		<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
-		  <div class="container">
-		        <h3>Radio Button with Label</h3>
-		        <label class="radiobutton">Choice 1
-		          <input type="radio" checked="checked" name="radio">
-		          <span class="checkmark"></span>
-		        </label>
-		        <label class="radiobutton">Choice 2
-		          <input type="radio" name="radio">
-		          <span class="checkmark"></span>
-		        </label>
-		        <div class="css-selector">
-		        <h4>CSS selector</h4>
-		        <p>.radiobutton, .checkmark</p>
-		        <h4>Sample code</h4>
-		          <div class="sample-code">
-		        <!-- IAT339 P1-Style_Guide_Template -->
-		        <code>
-		            &lt;label class="radiobutton"&gt;Choice 1<br>
-		            &nbsp;&lt;input type="radio" checked="checked" name="radio"&gt;<br>
-		            &nbsp;&lt;span class="checkmark">&lt;/span&gt;<br>
-		            &lt;/label&gt;
-		        </code>
-		      </div>
-		        </div>
-		      </div>
-
-
-		<div class="header3">
-			<h3>Numbered Lists</h3>
-		</div>
-		<ol class="num_list">
-			<li>Volume one</li>
-			<li>Volume two</li>
-			<li>Volume three</li>
-			<li>Volume four</li>
-			<li>Volume five</li>
-		</ol>
-
-
-			<h4>Sample Code</h4>
-	<div class="sample-code">
-			<code>&lt;ol class=&quot;num_list&quot;&gt;<br>
-				&lt;li&gt;Volume one&lt;/li&gt;<br>
-				&lt;li&gt;Volume two&lt;/li&gt;<br>
-				&lt;li&gt;Volume three&lt;/li&gt;<br>
-				&lt;li&gt;Volume four&lt;/li&gt; <br>
-				&lt;li&gt;Volume five&lt;/li&gt;<br>
-				&lt;/ol&gt;</code>
-		</div>
-
-		<div class="header3">
-			<h3>Image as a Link</h3>
-		</div>
-		<div class="mag">
-			<a href="#"><img src="images/scuba_diving.jpeg" alt="scuba_diving" width=250 ></a>
-		</div>
-		<div class="css-selector">
-		<h4>CSS selector</h4>
-		<p>.mag</p>
-		<div class="coding">
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-			<code>
-				&lt;div class="mag"&gt;<br>
-				&lt;a href=&quot;#&quot;&gt;<br>
-				&lt;img src=&quot;water.jpeg&quot; alt=&quot;scuba_diving&quot; width=250 &gt;&lt;/a&gt;<br>
-				&lt;/div&gt;
-		</div>
-
-
-	</section>
-
-	<!-- TEXT ELEMENTS SECTION // -->
-	<section id="text_elements">
-		<div class="header">
-			<h2>Text Elements</h2>
-		</div>
-		<div class="header3">
-			<h3>Headings</h3>
-		</div>
-		<h1>Heading1</h1>
-		<h2>Heading2</h2>
-		<h3>Heading3</h3>
-		<h4>Heading4</h4>
-
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-			<code>&lt;h1&gt;Heading1&lt;/h1&gt;<br>
-				&lt;h2&gt;Heading2&lt;/h2&gt;<br>
-				&lt;h3&gt;Heading3&lt;/h3&gt;<br>
-				&lt;h4&gt;Heading4&lt;/h4&gt;</code>
-		</div>
-
-		<div class="header3">
-			<h3>Paragraphs</h3>
-		</div>
-		<p>We are continually evaluating our processes and looking to learn more in an effort to be kinder to our planet. We admit we aren’t perfect, but here’s a little insight into some of the ways we try to minimise our impact.</p>
-
-		<p>Our printing and production are done by Park Communications, London, who are committed to minimising their environmental impact, and won Environmental Printer of the Year Award at the PrintWeek Awards 2017, and were a finalist for the award in 2018. With them, Another Escape prints in vegetable-based inks on FSC and EU Eco-label paper, and all printing plates used in magazine’s production are recycled after use, and all waste is disposed of responsibly.</p>
-
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-				<code>&lt;p&gt;We are continually evaluating our processes and looking to learn more in an effort to be kinder to our planet. We admit we aren’t perfect, but here’s a little insight into some of the ways we try to minimise our impact.&lt;/p&gt;<br>
-							&lt;p&gt;Our printing and production are done by Park Communications, London, who are committed to minimising their environmental impact, and won Environmental Printer of the Year Award at the PrintWeek Awards 2017, and were a finalist for the award in 2018. With them, Another Escape prints in vegetable-based inks on FSC and EU Eco-label paper, and all printing plates used in magazine’s production are recycled after use, and all waste is disposed of responsibly.&lt;/p&gt;</code>
-	</div>
-	</section>
+		</header>
+		<section class="about">
+			<h2 id="intro">Another Escape is an outdoor lifestyle, creative culture and sustainable living journal that celebrates the stories of passionate people inspired by nature. It is a lifestyle publication for those who are creative, curious and outdoorsy, that aims to inspire a connection with nature, considered ways of living, environmental stewardship and a sense of fulfilment in our everyday lives.</h2>
+			<img id=bg src="images/bg.jpg" alt=bg  >
+		</section>
 
 
 
-	<!-- COMBINED ELEMENTS SECTION // -->
-	<section id="combined_elements">
-		<div class="header">
-			<h2>Combined Elements</h2>
-		</div>
-		<div class="header3">
-			<h3>Main Navigation</h3>
-		</div>
-		<div class="top1">
-			<nav class="main_nav">
-				<a class="main_nav" href="#">HOME</a>
-				<a class="main_nav" href="shop.html">SHOP</a>
-				<a class="main_nav" href="#">ABOUT</a>
-				<a class="main_nav" href="#">CONTACT</a>
-				<a class="main_nav" href="#">SEARCH</a>
-			</nav>
-		</div>
-	</section>
-	<div class="css-selector">
-	<h4>CSS selector</h4>
-	<p>.main-nav</p>
-			<h4>Sample Code</h4>
-			<div class="sample-code">
-			<code>&lt;nav class=&quot;main_nav&quot;&gt;<br>
-				&lt;a class=&quot;main_nav&quot; href=&quot;#&quot;&gt;HOME&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot; href=&quot;shop.html&quot;&gt;SHOP&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot; href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot;href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot;href=&quot;#&quot;&gt;SEARCH&lt;/a&gt;<br>
-				&lt;/nav&gt;</code>
-		</div>
-</div>
 
 
-	<!--//DESIGN ELEMENTS -->
-	<section id="design_elements">
-		<div class="header">
-			<h2>Design Elements</h2>
-		</div>
-		<div class="header3">
-			<h3>Font</h3>
-		</div>
-		<h4>Headings</h4>
-		<div class="bold">
-			<p>PT Sans-Bold</p>
-		</div>
-
-		<h4>Navigation and Paragraphs</h4>
-		<p>PT Sans-Regular</p>
-
-
-
-		<div class="header3">
-			<h3>Colour palettes</h3>
-		</div>
-
-		<div class="colorpalettes">
-
-
-			<div class="color1">
-				<figure >
-					<img class="color" src="images/blackcolor.jpg" alt="Paragraph color" width="200">
-					<p>Paragraph & Hover link</p>
-					<p>#000000</p>
-				</figure>
+		<!-- INTERACTIVE ELEMENTS SECTION // -->
+		<section id="story">
+			<div class="header">
+				<h2>FEATURED STORIES</h2>
 			</div>
+			<div class="story">
 
-			<div class="color2">
-				<figure >
-					<img class="color" src="images/color4.jpg" alt="Headings color" height="200">
-					<p>Heading 1</p>
-					<p>#00334e</p>
-				</figure>
+				<div class="story1"> 
+					<figure>
+						<img  class="story1" src="images/JackHaskel1.jpg" alt="We walk Landscapes"  >
+						<h3>We walk Landscapes</h3> 
+					</figure>
+				</div>
+
+				<div class="story2"> 
+					<figure>
+						<img class="story2" src="images/save.jpg" alt="Saving the River Conwy" >
+						<h3>Saving the River Conwy</h3> 
+					</figure>
+
+				</div>
 			</div>
 
 
-			<div class="color3">
-				<figure >
-					<img class="color" src="images/color3.jpg" alt="Heading 1 & Navigation color" height="200">
-					<p>Heading 2 & Navigation</p>
-					<p>#145374</p>
-				</figure>
+			<button class="button-box">View all featured stories</button>
+		</section>
+
+		<!-- Default Button styling section -->
+
+
+
+		<section class="new_volume">
+			<div class="header">
+				<h2>NEW VOLUME</h2>
+			</div>
+			<div class="new">
+				<div class="new_img">
+					<a href="index.html">
+						<img id=water src="images/water_volume.jpeg" alt="The Water Volume"  height="350" >
+					</a>
+				</div>
+				<div class="new_text">
+					<h3>The Water Volume</h3>
+					<p>CA $12.00</P>
+						<P>The Water Volume shares in the lives of those deeply connected to water. It uncovers the restorative power of diving in, and it slips into worlds beneath the waves. It explores how experiences in water can inspire creative practice, and it ruminates on the pressures felt by aqua...</P>
+						<a class="button-new1" href="#">View volume</a>
+						<a class="button-new2" href="#">Add to basket</a>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+			<!-- TEXT ELEMENTS SECTION // -->
+			<div class="header3">
+				<h3>Volume</h3>
 			</div>
 
-			<div class="color4">
-				<figure >
-					<img class="color" src="images/color2.jpg" alt="Heading 3 color" height="200">
-					<p>Heading 3</p>
-					<p>#5588a3</p>
-				</figure>
-			</div>
+			<section id="shop">
+				<div class="shop1">
+
+					<div class="box1">
+						<figure>
+							<img src="images/frozen_volume.jpg" alt="The Frozen Volume" height="300">
+							<p>The Frozen Volume</p> <p>CA $12.00 </p>
+						</figure>
+					</div>
+
+					<div class="box2">
+						<figure>
+							<img src="images/altitudes_volume.jpg" alt="The Altitudes Volume" height="300">
+							<p>The Altitudes Volume</p> <p>CA $12.00</p>
+						</figure>
+					</div>
+
+					<div class="box3">
+						<figure>
+							<img src="images/wilderness_volume.jpeg" alt="The Wilderness Volume" height="300">
+							<p>The Wilderness Volume</p>  <p>CA $12.00</p>
+						</figure>
+					</div>
+				</div>
 
 
-			<div class="color5">
-				<figure >
-					<img class="color" src="images/color5.jpg" alt="Heading 4 color" height="200">
-					<p>Heading 4</p>
-					<p>#87c0cd</p>
-				</figure>
-			</div>
-
-
-			<div class="color6">
-				<figure >
-					<img class="color" src="images/footercolor.jpg" alt="Citation Background color" height="200">
-					<p>Citation Background </p>
-					<p>#d8d8d8</p>
-				</figure>
-			</div>
-
-
-			<div class="color7">
-				<figure >
-					<img class="color" src="images/color1.jpg" alt="Background color" height="200">
-					<p>Background</p>
-					<p>#e8e8e8</p>
-				</figure>
-			</div>
-
-		</div>
-
-		<div class="header3">
-			<h3>Potential imagery and art direction</h3>
-		</div>
-		<div class="art">
-			<img class="potentialimg" src="images/Jake-Baggaley.jpg" alt="Baggaley" >
-
-			<p>We use a lot of pictures of outdoor activities and stories about people. The Colour of the images has nothing to do with the website's Colour palettes. We want this pictures to be clear, high quality and real.</p>
-		</div>
-
-	</section>
-
-	<!-- //BRAND INFORMATION -->
-	<section id="brand_information">
-		<div class="header">
-			<h2>Basic Branding Ideas</h2>
-		</div>
-		<div class="header3">
-			<h3>What does the company do, or offer?</h3>
-		</div>
-		<p>Another Escape is a magazine about outdoor life and creative culture. Explore, innovate, and discover the small details of a happy life, with a gentle and humble attitude, to seek a positive and fulfilling source of life.</p>
-
-		<div class="header3">
-			<h3>Who is the company to potential customers? (as a person)</h3>
-		</div>
-		<p>Target customers is the people who likes outdoor life and creation. They can be students, businessmen, housewives, and other people of any profession. Although they live in the reinforced concrete city and are lost in the electronic world, they have a yearning for nature and a passion for exploration. </p>
-
-		<div class="header3">
-			<h3>Why might this company entice someone to purchase a product or service</h3>
-		</div>
-		<p>Another Escape has the people who love nature and their passionate stories, and pretty pictures. Reader will have the inspiration and courage when they finish the magzine. They will feel like they just escape the city life in a monment, hide in the nature. This magazine can inspire readers, to make them have a dream.</p>
-
-	</section>
+				<button class="button-box">View all volume</button>
+			</section>
 
 
 
 
+			<footer>
+				<address>
+					Visit us at: <a href="index.html"><font color="#00f">Another Escape</font></a>.<br> 
+					Written email to<br>
+					anotherescape@gmail.com<br>
+					Our location is<br>
+					2156 West Broadway, <br>
+					Vancouver, BC<br>
+					V5Y 1P5<br>
+					Canada
+				</address>
 
+			</footer>
 
-
-<!--//CITATIONS -->
-	<section id="citations">
-		<h2 id="cita">Citations</h2>
-
-		<ul>
-			<li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">Google Font</a></li>
-			<li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-
-			<li> CSS-Tricks. (2019). Solved with CSS! <strong> Dropdown Menus [CSS Files]</strong>. Retrieved from <a href="https://css-tricks.com/solved-with-css-dropdown-menus/">URL</a> </li>
-
-			<li>  W3schools.com. (2019). Tryit Editor v3.6. [online] <strong> Radio Buttom</strong>. Retrieved from <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio">URL</a></li>
-
-			<li>  <strong>[ALL figures.]</strong>(n.d) Retrieved from<a href="https://anotherescape.com">URL</a></li>
-
-		</ul>
-
-	</section>
-
-
-
-
-</body>
-</html>
+		</body>
+		</html>
