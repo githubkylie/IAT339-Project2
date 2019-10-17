@@ -19,10 +19,11 @@
 <section id="navigation">
 <div class="top1">
 <nav class="main_nav">
-  <a class="main_nav" href="index.html">STYLE GUIDE</a>
+  <a class="main_nav" href="website.html">HOME</a>
   <a class="main_nav" href="shop.html">SHOP</a>
   <a class="main_nav" href="cart.html">CART</a>
-   <a class="main_nav" href="checkout.html">CHECKOUT</a>
+  <a class="main_nav" href="checkout.html">CHECKOUT</a>
+  <a class="main_nav" href="styleguide.html">STYLEGUIDE</a>
 </nav>
  </div>
 </section>
@@ -35,7 +36,7 @@
 
 <h3>Payment Form</h3>
   <div class="payment">
-  
+
 
    <label class="radiobutton">MasterCard
               <input type="radio" checked="checked" name="radio">
@@ -61,41 +62,20 @@
  </div>
 
  <h3>Payment Information</h3>
-<form class="yform">
+<form class="my-form">
 <div class="payment1">
-  <div class="pay1">
-    <label for="form-text">Name on Card</label>
-    <input id="form-text" name="form-text" type="text" placeholder="Your Name">
+    <label for="name-input">Name on Card</label>
+    <input id="name-input" name="name on card" type="text" placeholder="Your Name">
+
+    <label for="card-number-input">Card Number</label>
+    <input id="card-number-input" name="card number" type="text" placeholder="xxxxxxxxxxxxx">
+
+    <label for="expiry-date-input">Expiry Date(MM/YY)</label>
+    <input id="expiry-date-input" name="expiry date" type="text" placeholder="MM/YY">
+
+    <label for="security-code-input">Security Code</label>
+    <input id="security-code-input" name="security code" type="text" placeholder="xxx">
 </div>
-
-<div class="pay2">
-    <label for="form-textarea1">Card Number</label>
-    <input id="form-textarea1" type="text" placeholder="xxxxxxxxxxxxx">
-  </div>
-
-<div class="pay3">
-    <label for="form-textarea2">Expiry Date(MM/YY)</label>
-    <input id="form-textarea2" type="text" placeholder="MM/YY">
-  </div>
-
-  <div class="pay4">
-    <label for="form-textarea3">Security Code</label>
-    <input id="form-textarea3" type="text" placeholder="xxx">
-  </div>
-
-  <div class="pay5">
-    <label for="form-textarea4">Card Number</label>
-    <input id="form-textarea4" type="text" placeholder="xxxxxxxxxxxxx">
-  </div>
-
-  <div class="pay6">
-    <label for="form-textarea5">Card Number</label>
-    <input id="form-textarea5" type="text" placeholder="xxxxxxxxxxx">
-  </div>
-</div>
-
-
-
 </form>
 
 
@@ -125,7 +105,7 @@
    <div class="product-quantity">
      <!-- https://codepen.io/komarovdesign/pen/PPRbgb -->
      <div class="quantity">
-     <input type="number" value="2" min="1" max="9" step="1">
+     <input type="number" value="1" min="1" max="9" step="1">
    </div>
    </div>
    <div class="product-line-price">$12.00</div>
@@ -146,7 +126,7 @@
    <div class="product-price">$12.00</div>
    <div class="product-quantity">
      <div class="quantity">
-     <input type="number" value="2" min="1" max="9" step="1">
+     <input type="number" value="1" min="1" max="9" step="1">
    </div>
  </div>
    <div class="product-line-price">$12.00</div>
@@ -179,17 +159,17 @@
          <div class="totals-value" id="cart-total">$65.76</div>
        </div>
        <div class="proceed">
-       
+
        <a class="button-sub" href="#">Proceed to Checkout</a>
        <!--<button class="checkout">Proceed to Checkout</button>-->
      </div>
      </div>
 
-     
+
 
    </div>
  </section>
- 
+
 
 
 
