@@ -5,7 +5,6 @@
   */
 
   body {
-    max-width: 100%;
     font-family: 'PT Sans', Helvetica, sans-serif;
     letter-spacing: 0.015em;
     margin: 5em;
@@ -76,7 +75,11 @@ p a{
 h2#intro{
    margin-top: 2em;
 }
-
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
 @media screen and (min-width:50em){
 .story{
 display:flex;
@@ -1223,9 +1226,9 @@ div.payment1 div input{
   }
   .product{
     padding-bottom: 50px;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-color: #5588a3;
+    border-color: rgb(90,90,90);
     margin-left: 0;
     width:100%;
   }
