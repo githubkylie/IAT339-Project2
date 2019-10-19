@@ -12,25 +12,32 @@
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 	</style>
+	<script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
-	<header>
-	<!--https://www.youtube.com/watch?v=PwWHL3RyQgk-->
-	<div class="logo">
-	<a href="website.html">
-	 <img src="images/logo.png" alt="logo"></a>
-	</div>
-	 <nav class="main_nav">
-		 <ul class="nav_links">
-			 <li><a href="#interactive_elements">INTERACTIVE ELEMENTS</a></li>
-			 <li><a href="#text_elements">TEXT ELEMENTS</a></li>
-			 <li><a href="#combined_elements">COMBINED ELEMENTS</a></li>
-			 <li><a href="#">MORE</a></li>
-		 </ul>
-	</nav>
-	</header>
+<div class="container">
+	<!--https://www.youtube.com/watch?v=cQ6YQ8K5MRw-->
+	  <div class="header">
+	  <div class="logo">
+	  <a href="website.html">
+	   <img id="logo-big" src="images/logo.png" alt="logo"></a>
+	 </div>
+	 <input type="checkbox" id="check">
+	 <label for="check" class="show-menu-button">
+	   <!--https://fontawesome.com/icons/bars?style=solid-->
+	   <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+	   <i class="fas fa-bars text-success"></i>
+	 </label>
+	     <ul class="menu">
+	       <a href="#interactive_elements">Interactive</a>
+	       <a href="#text_elements">Text Elements</a></li>
+	       <a href="#combined_elements">Combined Elements</a>
+	         <label for="check" class="hide-menu-button">
+	           <!--https://fontawesome.com/icons/times?style=solid-->
+	           <i class="fas fa-times text-success"></i>
+	         </label>
+	    </ul>
+	 </div>
 
 
 	<!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -393,7 +400,7 @@
 		<p>Another Escape has the people who love nature and their passionate stories, and pretty pictures. Reader will have the inspiration and courage when they finish the magzine. They will feel like they just escape the city life in a monment, hide in the nature. This magazine can inspire readers, to make them have a dream.</p>
 
 	</section>
-
+</div>
 
 
 

@@ -9,27 +9,35 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-
+  <script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-  <header>
-  <!--https://www.youtube.com/watch?v=PwWHL3RyQgk-->
+<div class="container">
+<!--https://www.youtube.com/watch?v=cQ6YQ8K5MRw-->
+  <div class="header">
   <div class="logo">
   <a href="website.html">
-   <img src="images/logo.png" alt="logo"></a>
+   <img id="logo-big" src="images/logo.png" alt="logo"></a>
  </div>
-   <nav class="main_nav">
-     <ul class="nav_links">
-       <li><a href="shop.html">SHOP</a></li>
-       <li><a href="about.html">ABOUT</a></li>
-       <li><a href="event.html">EVENT</a></li>
-     </ul>
-  </nav>
-  <a class="nav-button" href="contact.html">CONTACT<a>
- </header>
-
+ <input type="checkbox" id="check">
+ <label for="check" class="show-menu-button">
+   <!--https://fontawesome.com/icons/bars?style=solid-->
+   <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+   <i class="fas fa-bars text-success"></i>
+ </label>
+     <ul class="menu">
+       <a href="shop.html">SHOP</a>
+       <a href="about.html">ABOUT</a>
+       <a href="event.html">EVENT</a>
+       <a class="nav-button" href="contact.html">CONTACT<a>
+         <label for="check" class="hide-menu-button">
+           <!--https://fontawesome.com/icons/times?style=solid-->
+           <i class="fas fa-times text-success"></i>
+         </label>
+    </ul>
+ </div>
+</div>
 
 <section id="citations">
   <h2 id="cita">Citations</h2>
