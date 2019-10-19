@@ -10,7 +10,12 @@
     margin: 5em;
     background:#e8e8e8;
   }
-
+  header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+  }
   h1{
     color:#00334e;
     font-size:30px;
@@ -398,62 +403,6 @@ p a:focus {
 
 }
 
-a {
-  text-decoration: none;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-
-}
-
-nav li {
-  color:#5588a3;
-  display: block;
-  float: left;
-  padding-right: 3em;
-  position: relative;
-  text-decoration: none;
-  transition-duration: 0.5s;
-}
-
-
-
-nav li a {
- color:#5588a3;
-
-}
-
-nav li:hover {
-  color:#00334e;
-  cursor: pointer;
-}
-
-nav ul li ul {
- visibility: hidden;
- opacity: 0;
- min-width: 5rem;
- position: absolute;
- transition: all 0.5s ease;
- color:#00334e;
- left: 0;
- display: none;
-}
-
-nav ul li:hover > ul,
-nav ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  color:#00334e;
-}
-
-nav ul li ul li {
-  clear: both;
-  width: 100%;
-}
 
 
 
@@ -461,10 +410,7 @@ nav ul li ul li {
 .button-nav:focus{
   color:#000;
 }
-
-
 .button-sub {
-
   display: inline-block;
   padding: 1em;
   color: white;
@@ -531,13 +477,6 @@ section .top1{
   margin-top: 2em;
 }
 
-
-
-nav .main_nav {
-  display:inline;
-  color:#145374;
-
-}
 
 #first-name-input[type="text"]{
   border: 1px solid #909090;
@@ -816,31 +755,6 @@ nav .main_nav {
 .bold p{
   font-weight: bold;
 }
-
-@media screen and (max-width:60em){
-  nav .main_nav {
-    display:block;
-    color:#145374;
-
-  }
-}
-
-nav a.main_nav {
-  color:#145374;
-  margin-right:1em;
-  font-size:16px;
-}
-
-nav a.main_nav:hover {
- text-decoration: underline;
- color:black;
-
-}
-
-nav a.main_nav:focus {
- color:#145374;
-}
-
 
 @media screen and (min-width:50em){
 #bg{
@@ -1191,7 +1105,6 @@ div.payment1 div input{
   padding-top:1em;
   padding-bottom:1em;
   padding-left:1em;
-  width:99%;
 }
 
 #citations a{
@@ -1201,14 +1114,16 @@ div.payment1 div input{
 #citations a:hover{
   color:#00334e;
 }
-
-
-
 #citations ul{
   width:100%;
   padding-left:1em;
+  list-style: none;
 }
 
+#citations li{
+  display: block;
+  padding-top: 0;
+}
 @media screen and (min-width:30em){
   #citations ul{
     width:90%;
