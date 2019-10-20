@@ -61,6 +61,7 @@
       background: #e8e8e8;
     }
     .menu{
+      /*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
       z-index: 1;
       position: fixed;
       width: 100%;
@@ -370,6 +371,7 @@ address{
 .quantity {
   position: relative;
 }
+/*https://stackoverflow.com/questions/5617703/background-color-in-input-and-text-fields*/
 input, textarea {
   background-color : #fff;
 }
