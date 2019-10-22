@@ -9,6 +9,7 @@
     padding: 0;
    
   }
+
   body {
     font-family: 'PT Sans', Helvetica, sans-serif;
     letter-spacing: 0.015em;
@@ -21,9 +22,12 @@
   }
 
   /*https://www.youtube.com/watch?v=cQ6YQ8K5MRw*/
-  .header{
+  .header_nav{
     height:100px;
     color:#000;
+   
+
+  border: 1px solid #eee;
   }
   .logo{
     cursor: pointer;
@@ -99,10 +103,27 @@
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.5s;
-    padding-right: 20px;
+    
   }
   .nav-button:hover {
     background: #000;
+  }
+
+  #homepage_box1{
+    display:flex;   border: 1px solid #eee;
+  }
+
+   #homepage_box1 div{
+    border: 1px solid #eee;
+    width:100%;
+  }
+
+  .homepage_title{
+    font-family: 'PT Sans'；
+  }
+
+  #home_page_img{
+    width:60em;
   }
  
   h1{
@@ -150,8 +171,9 @@ p a{
 h2#intro{
    margin-top: 2em;
 }
+
 .container{
-  width:80%;
+  width:100%;
   margin: auto;
   overflow: hidden;
 }
@@ -176,12 +198,12 @@ div .story2{
 }
 }
 
-<<<<<<< Updated upstream
-=======
+ Updated upstream
 
 
 
->>>>>>> Stashed changes
+
+ Stashed changes
 
 
 
@@ -191,9 +213,6 @@ div .story2{
 display:block;
 }
 
-.story div{
-
-}
 
 div .story1{
   width:100%;
