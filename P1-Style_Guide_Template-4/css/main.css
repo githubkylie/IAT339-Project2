@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i, center, 
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -251,15 +251,26 @@ h2#intro{
   }
 
   div .story1{
-
+margin-right:2%;
     width:100%;
   }
 
   div .story2{
     width:100%;
+    margin-right:2%;
   }
 
    div .story3{
+    width:100%;
+  }
+
+  .story_img1{
+    width:100%;
+  }
+  .story_img2{
+    width:100%;
+  }
+  .story_img3{
     width:100%;
   }
 }
@@ -279,18 +290,22 @@ Stashed changes
     display:block;
   }
 
-  div .story1{
-    width:100%;
-    margin-right:2em;
+  .story div{
+      border: 1px solid #eee;
+
   }
 
-  div .story2{
+.story_img1{
+
+width: 100%;
+    
+    
+  }
+  .story_img2{
     width:100%;
   }
-
-  img .story1{
+  .story_img3{
     width:100%;
-
   }
 
 }
@@ -432,7 +447,10 @@ Stashed changes
 }
 
 footer{
-
+margin-left:10%;
+margin-right:10%;
+margin-top:5%;
+padding-bottom:5%;
   background-color:rgba(1, 97, 173, 0.1);
 }
 
@@ -1083,7 +1101,6 @@ section .top1{
 @media screen and (max-width:767px){
   .shop1{
     display:block;
-
   }
 
   .shop2{
@@ -1095,65 +1112,39 @@ section .top1{
   }
 
   .shop1 div{
-
     width:100%;
-  }
-
-  #shop{
-    width:100%;
-    margin-left:0;
+    margin-bottom:15%;
   }
 
   .shop2 div{
     width:100%;
+      margin-bottom:15%;
   }
 
   .shop3 div{
-
     width:100%;
+      margin-bottom:15%;
   }
 
   #shop{
-
+    margin-left:10%;
+    margin-right:10%;
     margin-bottom:2em;
+  }
+
+  .shop_img{
+width:100%;
   }
 }
 
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .shop1{
-    margin-top: 2em;
-    display:flex;
+
+@media screen and (min-width:768px){
+ #shop{
+    margin-left:10%;
+    margin-right:10%;
   }
 
-  .shop2{
-    display:flex;
-  }
-
-  .shop3{
-    display:flex;
-  }
-
-  .shop2 div{
-
-    width:100%;
-  }
-
-  .shop3 div{
-
-    width:100%;
-  }
-
-  #shop{
-    margin-bottom:2em;
-    width:100%;
-  }
-
-}
-
-
-
-@media screen and (min-width:979px){
   .shop1{
     margin-top: 2em;
     display:flex;
@@ -1162,19 +1153,19 @@ section .top1{
 
   .box1{
      margin-right:2%;
-     padding:3%;
+    
       width:100%;
   }
 
   .box2{
      margin-right:2%;
-     padding:3%;
+   
       width:100%;
   }
 
   .box3{
      width:100%;
-     padding:3%;
+     
   }
 
   .shop2{
@@ -1194,24 +1185,18 @@ section .top1{
   .shop1 div{
 
     width:100%;
-   background-color: #eee;
+ 
   }
 
   .shop2 div{
     width:100%;
 
-   background-color: #eee;
+   
   }
 
   .shop3 div{
     width:100%;
 
-   background-color: #eee;
-  }
-
-
-
-  #shop{
   }
 
 .shop_img{
@@ -1378,7 +1363,8 @@ div.payment1 div input{
   background:#d8d8d8;
   padding-top:1%;
   padding-bottom:1%;
-
+margin-left:10%;
+margin-right:10%;
 
   font-size: 0.9em;
 }
