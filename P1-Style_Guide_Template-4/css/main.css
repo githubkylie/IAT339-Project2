@@ -104,6 +104,9 @@
     #check:checked ~ .menu{
       right:0;
     }
+      .homepage_box{
+        display: block;
+      }
   }
   .nav-button {
     display: inline-block;
