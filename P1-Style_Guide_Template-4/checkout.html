@@ -3,15 +3,15 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Another Escape</title>
-	<link href="css/main.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<style>
-	@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
-	</style>
-	<script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another Escape</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
   <div class="header_nav">
   <div class="logo">
   <a href="website.html">
-		<img id="logo_big" src="images/logo_big.png" alt="logo with larger font"></a>
+    <img id="logo_big" src="images/logo_big.png" alt="logo with larger font"></a>
  	 <img id="logo_small" src="images/logo_small.png" alt="logo with smaller font"></a>
  </div>
  <input type="checkbox" id="check">
@@ -34,7 +34,7 @@
       <li> <a href="shop.html">Shop</a></li>
       <li> <a href="about.html">About</a></li>
       <li> <a href="event.html">Event</a></li>
-			<li> <a href="contact.html">Contact</a></li>
+      <li> <a href="contact.html">Contact</a></li>
 			<!--<li> <a class="nav-button" href="contact.html">Contact</a></li>-->
         <li> <label for="check" class="hide-menu-button">
            <!--https://fontawesome.com/icons/times?style=solid-->
@@ -43,138 +43,121 @@
     </ul>
  </div>
 
+<div id=“contact_header”>
+	<div class="header3">
+	    <h2>Checkout</h2>
+	</div>
+	<div class="contact_box">
+	<div class="contact_box1">
+	<div class="payment_title">
+	<h3>Payment Form</h3>
+	</div>
+	  <div class="payment">
+	   <label class="radiobutton">MasterCard
+	              <input type="radio" checked="checked" name="radio">
+	              <span class="checkmark"></span>
+	            </label>
 
-    <h2>Checkout</h2>
+	            <label class="radiobutton">Visa
+	              <input type="radio" name="radio">
+	              <span class="checkmark"></span>
+	            </label>
+
+	             <label class="radiobutton">Debit
+	              <input type="radio" name="radio">
+	              <span class="checkmark"></span>
+	            </label>
+
+	             <label class="radiobutton">Paypal
+	              <input type="radio" name="radio">
+	              <span class="checkmark"></span>
+	            </label>
 
 
+	 </div>
 
-<h3>Payment Form</h3>
-  <div class="payment">
+			 <div class="payment_title">
+			  <h3>Payment Information</h3>
+			 </div>
+			 <form class="my-form">
+			 <div class="payment1">
+			     <label for="name-input">Name on Card</label>
+			     <input id="name-input" name="name on card" type="text" placeholder="Your Name">
 
+			     <label for="card-number-input">Card Number</label>
+			     <input id="card-number-input" name="card number" type="text" placeholder="xxxxxxxxxxxxx">
 
-   <label class="radiobutton">MasterCard
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span>
-            </label>
+			     <label for="expiry-date-input">Expiry Date(MM/YY)</label>
+			     <input id="expiry-date-input" name="expiry date" type="text" placeholder="MM/YY">
 
-            <label class="radiobutton">Visa
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
+			     <label for="security-code-input">Security Code</label>
+			     <input id="security-code-input" name="security code" type="text" placeholder="xxx">
+			 </div>
+			 </form>
 
-             <label class="radiobutton">Debit
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-
-             <label class="radiobutton">Paypal
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-
-
- </div>
-
- <h3>Payment Information</h3>
-<form class="my-form">
-<div class="payment1">
-    <label for="name-input">Name on Card</label>
-    <input id="name-input" name="name on card" type="text" placeholder="Your Name">
-
-    <label for="card-number-input">Card Number</label>
-    <input id="card-number-input" name="card number" type="text" placeholder="xxxxxxxxxxxxx">
-
-    <label for="expiry-date-input">Expiry Date(MM/YY)</label>
-    <input id="expiry-date-input" name="expiry date" type="text" placeholder="MM/YY">
-
-    <label for="security-code-input">Security Code</label>
-    <input id="security-code-input" name="security code" type="text" placeholder="xxx">
 </div>
-</form>
-
-
-
- <section class="subtotal">
-
-	 <section id="checkout-cart">
-	 <h3>Cart Review</h3>
-
-
-	 <div class="product">
-	   <div class="product-image">
-	     <img id=water src="images/water_volume.jpeg" alt="The Water Volume"  height="300" >
-	   </div>
-	   <div class="product-details">The Water Volume</div>
-	   <div class="product-price">$12.00</div>
-	   <div class="product-quantity">
-	     <!-- https://codepen.io/komarovdesign/pen/PPRbgb -->
-	     <div class="quantity">
-	     1
-	   </div>
-	   </div>
-	   <div class="product-line-price">$12.00</div>
-	   <div class="product-removal">
-	     <!-- https://icon-library.net/icon/x-icon-png-21.html -->
-	     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
-	     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
-	   <label for="check">
-	     <!--https://fontawesome.com/icons/times?style=solid-->
-	     <i class="fas fa-times text-success"></i>
-	   </label>
-	   </div>
-	 </div>
-
-	 <div class="product">
-	   <div class="product-image">
-	     <!--https://www.papersmiths.co.uk/collections/notepads-sketchbooks/products/passionjournal-wellness-->
-	    <img src="images/frozen_volume.jpg" alt="The Frozen Volume" height="300">
-	   </div>
-	   <div class="product-details">The Frozen Volume</div>
-	   <div class="product-price">$12.00</div>
-	   <div class="product-quantity">
-	     <div class="quantity">1
-	   </div>
-	 </div>
-	   <div class="product-line-price">$12.00</div>
-	   <div class="product-removal">
-	     <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
-	     <!-- <input type="image" src="images/x-icon.jpg" width="40" height="40" alt="x-icon"> -->
-	     <label for="check">
-	       <!--https://fontawesome.com/icons/times?style=solid-->
-	       <i class="fas fa-times text-success"></i>
-	     </label>
-	   </div>
-	 </div>
-	     <div class="totals">
-	       <div class="totals-item">
-	         <label>Subtotal</label>
-	         <div class="totals-value" id="cart-subtotal">$48.00</div>
-	       </div>
-	       <div class="totals-item">
-	         <label>GST(5%)</label>
-	         <div class="totals-value" id="cart-gst">$2.40</div>
-	       </div>
-	       <div class="totals-item">
-	         <label>PST(7%)</label>
-	         <div class="totals-value" id="cart-pst">$3.36</div>
-	       </div>
-	       <div class="totals-item">
-	         <label>Shipping</label>
-	         <div class="totals-value" id="cart-shipping">$12.00</div>
-	       </div>
-	       <div class="totals-item totals-item-total ">
-	         <label>Total</label>
-	         <div class="totals-value" id="cart-total">$65.76</div>
-	       </div>
-	       <div class="proceed">
-
-	       <a class="button-sub" href="checkout.html">Proceed to Checkout</a>
-	       <!--<button class="checkout">Proceed to Checkout</button>-->
-	     </div>
-	     </div>
-	 </section>
+<div class="contact_box2">
+	<div class="cart_review_title">
+	    <h3>Cart Review</h3>
+	</div>
+	<div class="checkout_cart_review_box">
+		<div class="checkout_cart_review_box1">
+		<p>The Water Volume<p>
+		</div>
+		<div class="checkout_cart_review_box2">
+    <p>$12.00</p>
+			</div>
+		<div class="checkout_cart_review_box3">
+    <p>1</p>
+			</div>
+		<div class="checkout_cart_review_box4">
+    <p>$12.00</p>
+			</div>
 </div>
-
+<div class="checkout_cart_review_box">
+	<div class="checkout_cart_review_box1">
+	<p>The Frozen Volume<p>
+	</div>
+	<div class="checkout_cart_review_box2">
+	<p>$12.00</p>
+		</div>
+	<div class="checkout_cart_review_box3">
+	<p>1</p>
+		</div>
+	<div class="checkout_cart_review_box4">
+	<p>$12.00</p>
+		</div>
+</div>
+<div class="totals">
+	<div class="totals-item">
+		<label>Subtotal</label>
+		<div class="totals-value" id="cart-subtotal">$24.00</div>
+	</div>
+	<div class="totals-item">
+		<label>GST(5%)</label>
+		<div class="totals-value" id="cart-gst">$1.20</div>
+	</div>
+	<div class="totals-item">
+		<label>PST(7%)</label>
+		<div class="totals-value" id="cart-pst">$1.68</div>
+	</div>
+	<div class="totals-item">
+		<label>Shipping</label>
+		<div class="totals-value" id="cart-shipping">$12.00</div>
+	</div>
+	<div class="totals-item totals-item-total ">
+		<label>Total</label>
+		<div class="totals-value" id="cart-total">$38.88</div>
+	</div>
+	<div class="proceed">
+	<a class="button-sub" href="checkout.html">Proceed To Checkout</a>
+</div>
+	<!--<button class="checkout">Proceed to Checkout</button>-->
+</div>
+  </div>
+</div>
+</div>
+</div>
 
 <footer id="citations">
 	<div class="container">

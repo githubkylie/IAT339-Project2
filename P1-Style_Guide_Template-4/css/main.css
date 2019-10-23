@@ -822,56 +822,56 @@ section .top1{
     border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
+    width:80%;
     height: 2em;
     margin-bottom: 15px;
   }
   #name-input[type="text"]:focus{
     outline: none;
     border: 1px solid #145374;
-    width:50%;
+    width:80%;
     height: 2em;
   }
   #card-number-input[type="text"]{
     border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
+    width:80%;
     height: 2em;
     margin-bottom: 15px;
   }
   #card-number-input[type="text"]:focus{
     outline: none;
     border: 1px solid #145374;
-    width:50%;
+    width:80%;
     height: 2em;
   }
   #expiry-date-input[type="text"]{
     border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
+    width:80%;
     height: 2em;
     margin-bottom: 15px;
   }
   #expiry-date-input[type="text"]:focus{
     outline: none;
     border: 1px solid #145374;
-    width:50%;
+    width:80%;
     height: 2em;
   }
   #security-code-input[type="text"]{
     border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
+    width:80%;
     height: 2em;
     margin-bottom: 15px;
   }
   #security-code-input[type="text"]:focus{
     outline: none;
     border: 1px solid #145374;
-    width:50%;
+    width:80%;
     height: 2em;
   }
 }
@@ -1230,7 +1230,9 @@ table{
  float:right;
 }
 
-
+.payment_title{
+  margin-bottom: 10px;
+}
 
 @media screen and (max-width:40em){
   table{
@@ -1315,19 +1317,6 @@ div.art img{
   }
 }
 
-div.payment1{
-  padding:16px;
-  padding-left: 0;
-}
-
-div.payment1 div{
-  margin-bottom:1em;
-}
-
-div.payment1 div input{
-  width:20em;
-  height:2em;
-}
 .contact_box{
   display:flex;
   justify-content: flex-start;
@@ -1349,6 +1338,34 @@ div.payment1 div input{
   font-size: 10pt;
 }
 
+.checkout_box{
+  display:flex;
+  justify-content: flex-start;
+}
+.cart_review_title{
+  margin-bottom: 30px;
+}
+.checkout_cart_review_box{
+  display:flex;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color:#999999;
+  margin-left: 0;
+}
+.checkout_cart_review_box1{
+  flex:4;
+}
+.checkout_cart_review_box2{
+  flex:2;
+}
+.checkout_cart_review_box3{
+  flex:1;
+}
+.checkout_cart_review_box4{
+  flex:1;
+}
 #shop p{
   color:#999999;
 }
