@@ -112,7 +112,7 @@ table {
   }
   .menu a:hover, .show-menu-button:hover,
   .hide-menu-button:hover{
-    color:#5588a3;
+    color:#145374;
   }
   #check{
     position: absolute;
@@ -379,11 +379,9 @@ width: 100%;
 
   padding-top:8px;
   padding-bottom:8px;
-
   margin-bottom:5em;
-
   color: white;
-  background-color: #87c0cd;
+  background-color: #145374;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -435,31 +433,6 @@ width: 100%;
 
 }
 
-
-#address {
-  margin-left:1em;
-  padding-bottom:2em;
-  padding-top:2em;
-  margin-top:1em;
-  font-size: 1em;
-  line-height:1.5em;
-  margin-bottom:2em;
-}
-
-
-#address p a{
- color:#145374;
-}
-
-#address p a:hover{
-  color:black;
-
-}
-
-#address p a:focus {
-  color:#145374;
-
-}
 
 
 
@@ -622,7 +595,7 @@ p a:focus {
   padding-right: 20px;
   color: white;
   border:0;
-  background-color: #5588a3;
+  background-color: #145374;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -633,7 +606,7 @@ p a:focus {
 }
 
 .button-sub:focus{
-  color:#000;
+  background-color:#000;
 }
 
 div label{
@@ -687,40 +660,56 @@ section .top1{
 .new-line{
   display: block;
 }
-
+.contact_submit_button a{
+  width:100%;
+  text-align: center;
+}
 #first-name-input[type="text"]{
-  border: 1px solid #909090;
+  border: 1px solid #999999;
   display:block;
   opacity: 0.5;
   width:100%;
-  height: 2.5em;
-  margin-bottom: 20px;
+  height: 2em;
+  margin-bottom: 15px;
 }
 
 #first-name-input[type="text"]:focus{
   outline: none;
-  border: 2px solid #5588a3;
-  color: #5588a3;
+  border: 1px solid #145374;
   width:100%;
-  height: 2.5em;
+  height: 2em;
 }
 #last-name-input[type="text"]{
-  border: 1px solid #909090;
+  border: 1px solid #999999;
   display:block;
   opacity: 0.5;
   width:100%;
-  height: 2.7em;
-  margin-bottom: 20px;
+  height: 2em;
+  margin-bottom: 15px;
 }
 #last-name-input[type="text"]:focus{
   outline: none;
-  border: 2px solid #5588a3;
-  color: #5588a3;
+  border: 1px solid #145374;
   width:100%;
-  height: 2.7em;
+  height: 2em;
+}
+#email-input[type="email"]{
+  border: 1px solid #999999;
+  display:block;
+  opacity: 0.5;
+  width:100%;
+  height: 2em;
+  margin-bottom: 15px;
+}
+
+#email-input[type="email"]:focus{
+  outline: none;
+  border: 1px solid #145374;
+  width:100%;
+  height: 2em;
 }
 #name-input[type="text"]{
-  border: 1px solid #909090;
+  border: 1px solid #999999;
   display:block;
   opacity: 0.5;
   width:100%;
@@ -730,152 +719,160 @@ section .top1{
 
 #name-input[type="text"]:focus{
   outline: none;
-  border: 2px solid #5588a3;
-  color: #5588a3;
+  border: 1px solid #145374;
   width:100%;
-  height: 2.5em;
+  height: 2em;
 }
 #card-number-input[type="text"]{
-  border: 1px solid #909090;
+  border: 1px solid #999999;
   display:block;
   opacity: 0.5;
   width:100%;
-  height: 2.5em;
-  margin-bottom: 20px;
+  height: 2em;
+  margin-bottom: 15px;
 }
 
 #card-number-input[type="text"]:focus{
   outline: none;
-  border: 2px solid #5588a3;
-  color: #5588a3;
+  border: 1px solid #145374;
   width:100%;
-  height: 2.5em;
+  height: 2em;
 }
 #expiry-date-input[type="text"]{
-  border: 1px solid #909090;
+  border: 1px solid #999999;
   display:block;
   opacity: 0.5;
   width:100%;
-  height: 2.5em;
-  margin-bottom: 20px;
+  height: 2em;
+  margin-bottom: 15px;
 }
 
 #expiry-date-input[type="text"]:focus{
   outline: none;
-  border: 2px solid #5588a3;
-  color: #5588a3;
+  border: 1px solid #145374;
   width:100%;
-  height: 2.5em;
+  height: 2em;
 }
 #security-code-input[type="text"]{
-  border: 1px solid #909090;
+  border: 1px solid #999999;
   display:block;
   opacity: 0.5;
   width:100%;
-  height: 2.5em;
-  margin-bottom: 20px;
+  height: 2em;
+  margin-bottom: 15px;
 }
 
 #security-code-input[type="text"]:focus{
   outline: none;
-  border: 2px solid #5588a3;
-  color: #5588a3;
+  border: 1px solid #145374;
   width:100%;
-  height: 2.5em;
+  height: 2em;
 }
 
 @media screen and (min-width:47em){
-
+  .contact_submit_button{
+    width:15%;
+    margin-top: 15px;
+    text-align: center;
+  }
   /*https://codepen.io/lihs/pen/MEvzxr*/
   #first-name-input[type="text"]{
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
-    height: 2.5em;
-    margin-bottom: 20px;
+    width:80%;
+    height: 2em;
+    margin-bottom: 15px;
   }
   #first-name-input[type="text"]:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
-    width:50%;
-    height: 2.5em;
+    border: 1px solid #145374;
+    width:80%;
+    height: 2em;
   }
   #last-name-input[type="text"]{
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
-    height: 2.7em;
-    margin-bottom: 20px;
+    width:80%;
+    height: 2em;
+    margin-bottom: 15px;
   }
   #last-name-input[type="text"]:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
-    width:50%;
-    height: 2.7em;
+    border: 1px solid #145374;
+    width:80%;
+    height: 2em;
+  }
+  #email-input[type="email"]{
+    border: 1px solid #999999;
+    display:block;
+    opacity: 0.5;
+    width:80%;
+    height: 2em;
+    margin-bottom: 15px;
+  }
+  #email-input[type="email"]:focus{
+    outline: none;
+    border: 1px solid #145374;
+    width:80%;
+    height: 2em;
   }
   #name-input[type="text"]{
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
     width:50%;
-    height: 2.5em;
-    margin-bottom: 20px;
+    height: 2em;
+    margin-bottom: 15px;
   }
   #name-input[type="text"]:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
+    border: 1px solid #145374;
     width:50%;
-    height: 2.5em;
+    height: 2em;
   }
   #card-number-input[type="text"]{
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
     width:50%;
-    height: 2.5em;
-    margin-bottom: 20px;
+    height: 2em;
+    margin-bottom: 15px;
   }
   #card-number-input[type="text"]:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
+    border: 1px solid #145374;
     width:50%;
-    height: 2.5em;
+    height: 2em;
   }
   #expiry-date-input[type="text"]{
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
     width:50%;
-    height: 2.5em;
-    margin-bottom: 20px;
+    height: 2em;
+    margin-bottom: 15px;
   }
   #expiry-date-input[type="text"]:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
+    border: 1px solid #145374;
     width:50%;
-    height: 2.5em;
+    height: 2em;
   }
   #security-code-input[type="text"]{
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
     width:50%;
-    height: 2.5em;
-    margin-bottom: 20px;
+    height: 2em;
+    margin-bottom: 15px;
   }
   #security-code-input[type="text"]:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
+    border: 1px solid #145374;
     width:50%;
-    height: 2.5em;
+    height: 2em;
   }
 }
 
@@ -883,15 +880,14 @@ section .top1{
 @media screen and (max-width:47em){
   .my-form textarea{
     padding-bottom: 50px;
-    border: 1px solid #909090;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
     width:100%;
   }
   .my-form textarea:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
+    border: 1px solid #145374;
     width:100%;
   }
 }
@@ -899,17 +895,16 @@ section .top1{
 
 @media screen and (min-width:47em){
   .my-form textarea{
-    padding-bottom: 50px;
-    border: 1px solid #909090;
+    padding-bottom: 100px;
+    border: 1px solid #999999;
     display:block;
     opacity: 0.5;
-    width:50%;
+    width:80%;
   }
   .my-form textarea:focus{
     outline: none;
-    border: 2px solid #5588a3;
-    color: #5588a3;
-    width:50%;
+    border: 1px solid #145374;
+    width:80%;
   }
 }
 
@@ -1333,13 +1328,32 @@ div.payment1 div input{
   width:20em;
   height:2em;
 }
-
+.contact_box{
+  display:flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact_box1{
+  flex:2;
+}
+.contact_box2{
+  flex:1;
+}
+.contact_address{
+  margin-top: 30px;
+  font-size: 10pt;
+}
+.contact_email{
+  margin-top: 30px;
+  font-size: 10pt;
+}
 
 #shop p{
   color:#999999;
 }
 #shop a p:hover{
-  color:#5588a3;
+  color:#145374;
 }
 #citations{
   border-top-width: 1px;
@@ -1356,7 +1370,7 @@ div.payment1 div input{
 }
 
 #citations a:hover{
-  color:#5588a3;
+  color:#145374;
 }
 #citations ul{
   width:100%;
@@ -1389,8 +1403,15 @@ div.payment1 div input{
   margin-top: 50px;
   cursor:pointer;
 }
+.contact_social_media_logo{
+  margin-top: 50px;
+  cursor:pointer;
+  color:#999999;
+}
 
-
+.contact_social_media_logo a:hover{
+  color:#145374;
+}
 @media screen and (min-width:30em){
   #citations ul{
     width:90%;
@@ -1569,6 +1590,15 @@ width:100%;
   }
   .footer_box{
     display:block;
+  }
+  .contact_box{
+    display:block;
+  }
+  .contact_box2{
+    margin-top: 30px;
+  }
+  .contact_social_media_logo{
+    margin-top:30px;
   }
   .footer_logo{
     margin-top: 30px;
