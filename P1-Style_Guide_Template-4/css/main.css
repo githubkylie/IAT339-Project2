@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center, 
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -69,7 +69,10 @@ table {
   ul li a{
     margin-left: 50px;
   }
-
+  .overlay a:hover{
+    opacity: 0.4;
+    transition: .5s ease;
+  }
   /*https://www.youtube.com/watch?v=cQ6YQ8K5MRw*/
   .header_nav{
     height:100px;
@@ -298,8 +301,8 @@ Stashed changes
 .story_img1{
 
 width: 100%;
-    
-    
+
+
   }
   .story_img2{
     width:100%;
@@ -1153,19 +1156,19 @@ width:100%;
 
   .box1{
      margin-right:2%;
-    
+
       width:100%;
   }
 
   .box2{
      margin-right:2%;
-   
+
       width:100%;
   }
 
   .box3{
      width:100%;
-     
+
   }
 
   .shop2{
@@ -1185,13 +1188,13 @@ width:100%;
   .shop1 div{
 
     width:100%;
- 
+
   }
 
   .shop2 div{
     width:100%;
 
-   
+
   }
 
   .shop3 div{
