@@ -29,12 +29,14 @@
     display: inline;
   }
 
+  ul li a{
+    margin-left: 50px;
+  }
+
   /*https://www.youtube.com/watch?v=cQ6YQ8K5MRw*/
   .header_nav{
     height:100px;
     color:#000;
-
-
     border: 1px solid #eee;
   }
   .logo{
@@ -45,7 +47,7 @@
   .menu{
     float: right;
     margin-top: 37px;
-    
+
   }
   .menu a{
     color:#000;
@@ -73,7 +75,6 @@
   @media screen and (max-width: 800px){
     .show-menu-button, .hide-menu-button{
       display: block;
-      background: #e8e8e8;
     }
     .menu{
       /*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
@@ -112,27 +113,30 @@
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.5s;
-    
+
   }
   .nav-button:hover {
     background: #000;
   }
 
-  #homepage_box1{
-    display:flex;   
+  .homepage_box{
+    display:flex;
+    justify-content: space-between;
   }
 
-  #homepage_box1 div{
+  .homepage_box div{
     border: 1px solid #eee;
-    width:100%;
   }
 
   .homepage_title{
-    font-family:'LinBiolinum_RB';
+    flex:1.5;
   }
-
+.homepage_img{
+    flex:4;
+}
   #home_page_img{
-    width:60em;
+    max-width: 100%;
+    height: auto;
   }
 
   h1{
@@ -182,7 +186,8 @@ h2#intro{
 }
 
 .container{
-  width:100%;
+  width:80%;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -197,7 +202,7 @@ h2#intro{
   }
 
   div .story1{
-   
+
     width:100%;
   }
 
@@ -250,7 +255,7 @@ Stashed changes
 }
 
 .product_box1{
-  display:flex;  
+  display:flex;
 
 }
 
@@ -279,9 +284,9 @@ Stashed changes
 .product_box1_2{
   width:100%;
   font-size: 1.3em;
- 
+
   padding-top: 5%;
- 
+
 }
 
 .procuct1_text{
@@ -290,7 +295,7 @@ Stashed changes
 }
 
 .product_box2{
-  display:flex;  
+  display:flex;
   margin-top: 3%;
 }
 
@@ -1067,7 +1072,7 @@ section .top1{
 }
 
 
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
   .shop1{
     margin-top: 2em;
     display:flex;
@@ -1082,12 +1087,12 @@ section .top1{
   }
 
   .shop2 div{
-   
+
     width:100%;
   }
 
   .shop3 div{
-   
+
     width:100%;
   }
 
@@ -1139,20 +1144,20 @@ section .top1{
 
 
   .shop1 div{
-    
+
     width:100%;
    background-color: #eee;
   }
 
   .shop2 div{
     width:100%;
-   
+
    background-color: #eee;
   }
 
   .shop3 div{
     width:100%;
-   
+
    background-color: #eee;
   }
 
@@ -1440,7 +1445,7 @@ width:100%;
 }
 
 #our_story{
-  
+
 font-size:1.1em;
 line-height:2em;
 }
@@ -1496,7 +1501,7 @@ width:100%;
 .event_title{
   font-weight: bold;
   font-size: 200%;
- 
+
 }
 
 .event_text{
