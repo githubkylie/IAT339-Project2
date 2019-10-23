@@ -117,9 +117,6 @@
     #logo_small{
       display:block;
     }
-    .homepage_box{
-      display: block;
-    }
   }
   .nav-button {
     display: inline-block;
@@ -245,7 +242,6 @@ Stashed changes
   .story{
     display:block;
   }
-
 
   div .story1{
     width:100%;
