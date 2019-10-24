@@ -177,6 +177,7 @@
   .homepage_box{
     display:flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .homepage_box div{
@@ -1679,6 +1680,9 @@ div.art img{
 @media screen and (max-width:780px){
   .homepage_box{
     display:block;
+  }
+  .homepage_title{
+    margin-top: 0;
   }
   .event1{
     display:block;
