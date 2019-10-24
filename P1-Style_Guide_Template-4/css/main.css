@@ -199,7 +199,7 @@
 
 
   h1{
-    color:#00334e;
+    color:#000;
     font-size:30px;
     letter-spacing: 0.05em;
   }
@@ -226,15 +226,25 @@ h3{
   color:#5588a3;
   font-size:20px;
 }
-
+#story {
+  margin-bottom: 70px;
+}
+#story h3{
+  color:#000;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 h4 {
   color:#87c0cd;
   font-size:15px;
 }
 
 p a{
-  color:#145374;
-
+  color:#999999;
+}
+p a:hover{
+  color:#000;
+  transition-duration: 0.3s;
 }
 
 h2#intro{
