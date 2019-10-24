@@ -86,10 +86,10 @@
     margin-top: 30px;
   }
   /*https://stackoverflow.com/questions/28966158/changing-image-depending-on-mobile-or-desktop-html-css*/
-  #logo_big{
+  .logo_big{
     display: block;
   }
-  #logo_small{
+  .logo_small{
     display: none;
   }
   .menu{
@@ -152,10 +152,10 @@
     #check:checked ~ .menu{
       right:0;
     }
-    #logo_big{
+    .logo_big{
       display: none;
     }
-    #logo_small{
+    .logo_small{
       display:block;
     }
   }
