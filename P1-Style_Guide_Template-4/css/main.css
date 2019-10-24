@@ -7,49 +7,49 @@
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
-*/
+   */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure,
+   footer, header, hgroup, menu, nav, section {
+     display: block;
+   }
 
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+   ol, ul {
+     list-style: none;
+   }
+   blockquote, q {
+     quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+     content: '';
+     content: none;
+   }
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
 
-  *{
+   *{
     box-sizing: border-box;
   }
 
@@ -158,6 +158,7 @@ table {
       display:block;
     }
   }
+
   .nav-button {
     display: inline-block;
     color: white;
@@ -172,6 +173,7 @@ table {
     background: #000;
   }
 
+
   .homepage_box{
     display:flex;
     justify-content: space-between;
@@ -184,13 +186,15 @@ table {
   .homepage_title{
     flex:1.5;
   }
-.homepage_img{
-    flex:4;
-}
+  .homepage_img{
+    flex:2.95;
+  }
   #home_page_img{
     max-width: 100%;
     height: auto;
+  
   }
+
 
   h1{
     color:#00334e;
@@ -245,6 +249,11 @@ h2#intro{
 }
 
 @media screen and (min-width:768px){
+  #story{
+    margin-left:10%;
+     margin-right:10%;
+  }
+
   .story{
     display:flex;
   }
@@ -254,7 +263,7 @@ h2#intro{
   }
 
   div .story1{
-margin-right:2%;
+    margin-right:2%;
     width:100%;
   }
 
@@ -263,7 +272,7 @@ margin-right:2%;
     margin-right:2%;
   }
 
-   div .story3{
+  div .story3{
     width:100%;
   }
 
@@ -278,31 +287,40 @@ margin-right:2%;
   }
 }
 
-Updated upstream
-
-
-
-
-Stashed changes
 
 
 
 
 @media screen and (max-width:767px){
-  .story{
+ #story{
+    margin-left:10%;
+     margin-right:10%;
+  }
+
+   .story{
     display:block;
+
   }
 
   .story div{
-      border: 1px solid #eee;
-
+   width:100%;
   }
 
-.story_img1{
+  div .story1{
+    width:100%;
+  }
 
-width: 100%;
+  div .story2{
+    width:100%;
+   
+  }
 
+  div .story3{
+    width:100%;
+  }
 
+  .story_img1{
+    width:100%;
   }
   .story_img2{
     width:100%;
@@ -314,10 +332,10 @@ width: 100%;
 }
 
 
-
+@media screen and (min-width:769px){
 
 .product1{
-
+width:100%;
 }
 
 .product_box1{
@@ -337,12 +355,19 @@ width: 100%;
   width:100%;
   background-color:rgba(1, 97, 173, 0.1);
   text-align: center;
-  margin-right: 9%;
+  margin-right: 5%;
+  flex:2;
+}
+
+.product_box1_2{
+  line-height:190%;
+  flex:1;
 }
 
 .product1_img{
   width:80%;
-  padding: 5em;
+  padding: 5%;
+
 }
 
 
@@ -369,7 +394,72 @@ width: 100%;
 .product2_img{
   width:100%;
 
+}
 
+}
+
+@media screen and (max-width:768px){
+.product1{
+width:100%;
+}
+
+.product_box1{
+  display:block;
+
+}
+
+
+.product_box1 div{
+ border: 1px solid #eee;
+
+ width:100%;
+
+}
+
+.product_box1_1{
+  width:100%;
+  background-color:rgba(1, 97, 173, 0.1);
+  text-align: center;
+  margin-right: 5%;
+  flex:2;
+}
+
+.product_box1_2{
+  line-height:190%;
+  flex:1;
+}
+
+.product1_img{
+  width:80%;
+  padding: 5%;
+
+}
+
+
+.product_box2{
+  display:block;
+  margin-top: 10%;
+}
+
+.product_box2 div{
+ border: 1px solid #eee;
+
+ width:100%;
+
+}
+
+.product_box2_1{
+  width:100%;
+  padding-top: 2%;
+  line-height:190%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.product2_img{
+  width:100%;
+
+}
 
 }
 
@@ -1097,12 +1187,12 @@ section .top1{
 
   .shop2 div{
     width:100%;
-      margin-bottom:15%;
+    margin-bottom:15%;
   }
 
   .shop3 div{
     width:100%;
-      margin-bottom:15%;
+    margin-bottom:15%;
   }
 
   #shop{
@@ -1110,7 +1200,7 @@ section .top1{
   }
 
   .shop_img{
-width:100%;
+    width:100%;
   }
 }
 
@@ -1121,59 +1211,59 @@ width:100%;
   .shop1{
     margin-top: 2em;
     display:flex;
-     width:100%;
+    width:100%;
   }
 
   .box1{
-     margin-right:2%;
+   margin-right:2%;
 
-      width:100%;
-  }
+   width:100%;
+ }
 
-  .box2{
-     margin-right:2%;
+ .box2{
+   margin-right:2%;
 
-      width:100%;
-  }
+   width:100%;
+ }
 
-  .box3{
-     width:100%;
+ .box3{
+   width:100%;
 
-  }
+ }
 
-  .shop2{
-    display:flex;
-    margin-top:2%;
-     width:100%;
-  }
+ .shop2{
+  display:flex;
+  margin-top:2%;
+  width:100%;
+}
 
-  .shop3{
-    display:flex;
-     margin-top:2%;
-      width:100%;
-  }
-
-
-
-  .shop1 div{
-
-    width:100%;
-
-  }
-
-  .shop2 div{
-    width:100%;
+.shop3{
+  display:flex;
+  margin-top:2%;
+  width:100%;
+}
 
 
-  }
 
-  .shop3 div{
-    width:100%;
+.shop1 div{
 
-  }
+  width:100%;
+
+}
+
+.shop2 div{
+  width:100%;
+
+
+}
+
+.shop3 div{
+  width:100%;
+
+}
 
 .shop_img{
-width:100%;
+  width:100%;
 
 
 
@@ -1494,15 +1584,15 @@ div.art img{
 
 .about div{
  border: 1px solid #eee;
-width:100%;
+ width:100%;
 }
 
 .about_text{
   padding-right: 2%;
-  }
+}
 
 .about_img{
-width:100%;
+  width:100%;
 
 }
 
@@ -1523,8 +1613,8 @@ width:100%;
 
 #our_story{
 
-font-size:1.1em;
-line-height:2em;
+  font-size:1.1em;
+  line-height:2em;
 }
 
 @media screen and (max-width:767px){
@@ -1563,24 +1653,24 @@ line-height:2em;
 
 .event1 div{
  border: 1px solid #eee;
-width:100%;
+ width:100%;
 
 }
 
 .event2 div{
  border: 1px solid #eee;
-width:100%;
+ width:100%;
 }
 
 .event1_img{
   width:100%;
- padding-right: 4%
+  padding-right: 4%
 
 }
 
 .event2_img{
   width:100%;
- padding-right: 4%
+  padding-right: 4%
 
 }
 
