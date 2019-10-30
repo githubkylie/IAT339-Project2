@@ -4,40 +4,42 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>ANOTHER ESCAPE</title>
-
-	<link rel="stylesheet" href="css/normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Another Escape</title>
 	<link href="css/main.css" rel="stylesheet">
-	<!-- https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 	</style>
 	<script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 <div class="container">
-	<!--https://www.youtube.com/watch?v=cQ6YQ8K5MRw-->
-	  <div class="header">
-	  <div class="logo">
-	  <a href="website.html">
-	   <img src="images/logo.png" alt="logo"></a>
-	 </div>
-	 <input type="checkbox" id="check">
-	 <label for="check" class="show-menu-button">
-	   <!--https://fontawesome.com/icons/bars?style=solid-->
-	   <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
-	   <i class="fas fa-bars text-success"></i>
-	 </label>
-	     <ul class="menu">
-	       <a href="#interactive_elements">Interactive</a>
-	       <a href="#text_elements">Text Elements</a></li>
-	       <a href="#combined_elements">Combined Elements</a>
-	         <label for="check" class="hide-menu-button">
-	           <!--https://fontawesome.com/icons/times?style=solid-->
-	           <i class="fas fa-times text-success"></i>
-	         </label>
-	    </ul>
-	 </div>
+	<div class="header_nav">
+	<div class="logo">
+	<a href="website.html">
+	 <img class="logo_big" src="images/logo_big.png" alt="logo with larger font"></a>
+	<a> <img class="logo_small" src="images/logo_small.png" alt="logo with smaller font"></a>
+ </div>
+ <input type="checkbox" id="check">
+ <label for="check" class="show-menu-button">
+	 <!--https://fontawesome.com/icons/bars?style=solid-->
+	 <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+	 <i class="fas fa-bars text-success"></i>
+ </label>
+		 <ul class="menu">
+			<li> <a href="shop.html">Shop</a></li>
+			<li> <a href="about.html">About</a></li>
+			<li> <a href="event.html">Event</a></li>
+			<li> <a href="contact.html">Contact</a></li>
+			<!--<li> <a class="nav-button" href="contact.html">Contact</a></li>-->
+				<li> <label for="check" class="hide-menu-button">
+					 <!--https://fontawesome.com/icons/times?style=solid-->
+					 <i class="fas fa-times text-success"></i>
+				 </label></li>
+		</ul>
+ </div>
 
 
 	<!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -408,22 +410,47 @@
 
 
 <!--//CITATIONS -->
-	<section id="citations">
-		<h4 id="cita">Citations</h4>
+<footer id="footer">
+	<div class="container">
+<div class="footer_box">
+	<div class="footer_box1">
+	<p>&copy; 2019, Another Escape</p>
+	<p>All Rights Reserved.</p>
+	<div class="footer_logo">
+			<a href="website.html">
+		<img class="logo_big" src="images/logo_big.png" alt="logo with larger font">
+	</a>
+	</div>
+	</div>
 
-		<ul>
-			<li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">Google Font</a></li>
-			<li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+	<div class="footer_box2">
+	<p> <a href="about.html">Terms of Use</a></p>
+	<p> <a href="about.html">Privacy Policy</a></p>
+	<p> <a href="about.html">Cookies</a></p>
+	<p> <a href="contact.html">Contact</a></p>
+	</div>
 
-			<li> CSS-Tricks. (2019). Solved with CSS! <strong> Dropdown Menus [CSS Files]</strong>. Retrieved from <a href="https://css-tricks.com/solved-with-css-dropdown-menus/">URL</a> </li>
+	<div class="footer_box3">
+	<p> <a href="styleguide.html">Styleguide</a></p>
+	<p> <a href="citation.html">Citations</a></p>
+	<p> <a href="https://github.com/githubkylie/IAT339-Project2.git">Git Repository</a></p>
+	<div class="footer_social_media_logo">
 
-			<li>  W3schools.com. (2019). Tryit Editor v3.6. [online] <strong> Radio Buttom</strong>. Retrieved from <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio">URL</a></li>
+	<a href="website.html"><i class="fab fa-facebook-f text-success"></i></a>
 
-			<li>  <strong>[ALL figures.]</strong>(n.d) Retrieved from<a href="https://anotherescape.com">URL</a></li>
+	<a href="website.html"><i class="fab fa-twitter text-success"></i></a>
 
-		</ul>
-
-	</section>
+	<a href="website.html"><i class="fab fa-instagram text-success"></i></a>
+	<div class="footer_mobile_logo">
+			<a href="website.html">
+		 <img class="logo_small" src="images/logo_small.png" alt="logo with smaller font">
+	 </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
 
 
 
