@@ -3,326 +3,202 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <title>ANOTHER ESCAPE</title>
-
-  <link href="css/main.css" rel="stylesheet">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Another Escape</title>
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+	</style>
+	<script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>ANOTHER ESCAPE</h1>
-  </header>
-
-
-  <section id="navigation">
-<div class="top1">
-<nav class="main_nav">
-  <a class="main_nav" href="index.html">STYLE GUIDE</a>
-  <a class="main_nav" href="shop.html">SHOP</a>
-  <a class="main_nav" href="cart.html">CART</a>
-   <a class="main_nav" href="checkout.html">CHECKOUT</a>
-</nav>
+<div class="container">
+<!--https://www.youtube.com/watch?v=cQ6YQ8K5MRw-->
+  <div class="header_nav">
+  <div class="logo">
+  <a href="website.html">
+    <img class="logo_big" src="images/logo_big.png" alt="logo with larger font"></a>
+   <img class="logo_small" src="images/logo_small.png" alt="logo with smaller font"></a>
+ </div>
+ <input type="checkbox" id="check">
+ <label for="check" class="show-menu-button">
+   <!--https://fontawesome.com/icons/bars?style=solid-->
+   <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+   <i class="fas fa-bars text-success"></i>
+ </label>
+     <ul class="menu">
+       <li> <a href="styleguide.html">Styleguide</a></li>
+ 			<li> <a href="shop-code.html">Shop</a></li>
+ 			<li> <a href="cart-code.html">Cart</a></li>
+ 			<li> <a href="checkout-code.html">Checkout</a></li>
+			<!--<li> <a class="nav-button" href="contact.html">Contact</a></li>-->
+        <li> <label for="check" class="hide-menu-button">
+           <!--https://fontawesome.com/icons/times?style=solid-->
+           <i class="fas fa-times text-success"></i>
+         </label></li>
+    </ul>
  </div>
 
 
-</section>
+<div id="shop">
 
+<h2>Volume</h2>
 
-<div class="header3">
-<h3>Volume</h3>
-</div>
-
-<section id="shop">
 <div class="shop1">
 
        <div class="box1">
         <figure>
-        <img src="images/frozen_volume.jpg" alt="The Frozen Volume" height="300">
-      <p>The Frozen Volume</p> <p>CA $12.00 </p>
+					<div class="overlay">
+           <a href="product1.html">
+            <img class="shop_img"  src="images/water_volume.jpeg" alt="The Water Volume" >
+				</div>
+        <p>The Water Volume</p> </a><p>CA $12.00</p>
+
          </figure>
      </div>
 
      <div class="box2">
          <figure>
-        <img src="images/altitudes_volume.jpg" alt="The Altitudes Volume" height="300">
-        <p>The Altitudes Volume</p> <p>CA $12.00</p>
+					 <div class="overlay">
+        <a href="product2.html">
+        <img class="shop_img"  src="images/frozen_volume.jpg" alt="The Frozen Volume" >
+			</div>
+      <p>The Frozen Volume</p> </a><p>CA $12.00 </p>
         </figure>
     </div>
 
     <div class="box3">
           <figure>
-        <img src="images/wilderness_volume.jpeg" alt="The Wilderness Volume" height="300">
-        <p>The Wilderness Volume</p>  <p>CA $12.00</p>
+						<div class="overlay">
+         <a href="product2.html">
+        <img class="shop_img"  src="images/wilderness_volume.jpeg" alt="The Wilderness Volume" >
+
+		</div>
+        <p>The Wilderness Volume</p>	</a> <p>CA $12.00</p>
       </figure>
    </div>
+
 </div>
 
+
  <div class="shop2">
-    <div class="box4">
+    <div class="box1">
         <figure>
-        <img src="images/natural_world_volume.jpg" alt="The Natural World Volume" height="300">
-        <p>The Natural World Volume</p>  <p>CA $12.00</p>
+					<div class="overlay">
+			 <a href="product2.html">
+        <img class="shop_img" src="images/natural_world_volume.jpg" alt="The Natural World Volume" >
+
+		</div>
+        <p>The Natural World Volume</p> </a> <p>CA $12.00</p>
       </figure>
     </div>
 
-  <div class="box5">
+  <div class="box2">
         <figure>
-        <img src="images/wood_volume.jpg" alt="The Wood Volume" height="300">
-        <p>The Wood Volume</p>  <p>CA $12.00</p>
+					<div class="overlay">
+			 <a href="product2.html">
+        <img class="shop_img" src="images/wood_volume.jpg" alt="The Wood Volume" >
+
+		</div>
+        <p>The Wood Volume</p> </a> <p>CA $12.00</p>
       </figure>
       </div>
 
-<div class="box5">
+<div class="box3">
           <figure>
-        <img src="images/winter_volume.jpg" alt="The Winter Volume" height="300">
-         <p>The Winter Volume</p>  <p>CA $12.00</p>
+						<div class="overlay">
+         <a href="product2.html">
+        <img class="shop_img" src="images/winter_volume.jpg" alt="The Winter Volume" >
+
+		</div>
+         <p>The Winter Volume</p> </a> <p>CA $12.00</p>
       </figure>
   </div>
   </div>
 
   <div class="shop3">
-    <div class="box7">
+    <div class="box1">
         <figure>
-        <img src="images/great_outdoor_volume.jpg" alt="The Great Outdoors Volume" height="300">
-        <p>The Great Outdoors Volume</p>  <p>CA $12.00</p>
+					<div class="overlay">
+			 <a href="product2.html">
+        <img  class="shop_img" src="images/great_outdoor_volume.jpg" alt="The Great Outdoors Volume" >
+
+		</div>
+        <p>The Great Outdoors Volume</p> </a> <p>CA $12.00</p>
       </figure>
     </div>
 
-   <div class="box8">
+   <div class="box2">
         <figure>
-        <img src="images/night_volume.jpg" alt="The Night Volume" height="300">
-        <p>The Night Volume</p> <p>SOLD OUT</p>
+					<div class="overlay">
+			 <a href="product2.html">
+        <img class="shop_img" src="images/night_volume.jpg" alt="The Night Volume" >
+
+		</div>
+        <p>The Night Volume</p> </a><p>SOLD OUT</p>
         </figure>
         </div>
 
-       <div class="box9">
+       <div class="box3">
             <figure>
-            <img src="images/journeys_volume.jpg" alt="The Journeys Volume" height="300">
-            <p>The Journeys Volume</p> <p>SOLD OUT</p>
+							<div class="overlay">
+	         <a href="product2.html">
+            <img class="shop_img" src="images/journeys_volume.jpg" alt="The Journeys Volume" >
+
+				</div>
+            <p>The Journeys Volume</p> </a><p>SOLD OUT</p>
             </figure>
             </div>
            </div>
-
-
-          </section>
-
-<div class="sample-code">
-      <h4>Code</h4>
-      <div class="coding1">
-     <code> &lt;div class=&quot;header3&quot;&gt;</code></div>
-     <div class="coding1">
-<code>&lt;h3&gt;Volume&lt;/h3&gt;</code></div>
-<div class="coding1">
-<code>&lt;/div&gt;</code></div>
-      <div class="coding1">
-     <code> &lt;section id=&quot;shop&quot;&gt;</code>
-    </div>
-     <div class="coding2">
- <code> &lt;div class=&quot;shop1&quot;&gt;</code>
-       </div>
-     <div class="coding3">
-     <code>    &lt;div class=&quot;box1&quot;&gt;</code>
-       </div>
-     <div class="coding4">
-     <code>     &lt;figure&gt;</code>
-        </div>
-     <div class="coding5">
-     <code>     &lt;img src=&quot;11.jpg&quot; alt=&quot;BOBO MILK TEA&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding6">
-    <code>    &lt;p&gt;The Frozen Volume&lt;/p&gt; &lt;p&gt;CA $12.00 &lt;/p&gt;  </code>
-      </div>
-     <div class="coding7">
-     <code>      &lt;/figure&gt;</code>
-         </div>
-     <div class="coding8">
-     <code>  &lt;/div&gt;</code>
-     </div>
-     <div class="coding9">
-
-     <code>  &lt;div class=&quot;box2&quot;&gt;</code>
-     </div>
-     <div class="coding10">
-      <code>     &lt;figure&gt;</code>
-         </div>
-     <div class="coding11">
-     <code>     &lt;img src=&quot;10.jpg&quot; alt=&quot;MATCHA LATTE&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-    <div class="coding12">
-       <code>   &lt;p&gt;The Altitudes Volume&lt;/p&gt; &lt;p&gt;CA $12.00&lt;/p&gt;</code>
-        </div>
-     <div class="coding13">
-       <code> &lt;/figure&gt;</code>
-        </div>
-     <div class="coding14">
-   <code> &lt;/div&gt;</code>
-    </div>
-     <div class="coding15">
-   <code>   &lt;div class=&quot;box3&quot;&gt;</code>
-    </div>
-     <div class="coding16">
-         <code>   &lt;figure&gt;</code>
+				 </div>
           </div>
-     <div class="coding17">
-        <code>  &lt;img src=&quot;9.jpeg&quot; alt=&quot;The Wilderness Volume&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding18">
-      <code>    &lt;p&gt;The Wilderness Volume&lt;/p&gt;  &lt;p&gt;CA $12.00&lt;/p&gt;</code>
-     </div>
-     <div class="coding19">
-     <code>   &lt;/figure&gt;</code>
-  </div>
-     <div class="coding20">
-   <code>  &lt;/div&gt;</code>
-   </div>
-     <div class="coding21">
- <code> &lt;/div&gt;</code>
-</div>
-     <div class="coding22">
- <code>  &lt;div class=&quot;shop2&quot;&gt;</code>
- </div>
-     <div class="coding23">
-    <code>  &lt;div class=&quot;box4&quot;&gt;</code>
-    </div>
-     <div class="coding24">
-      <code>    &lt;figure&gt;</code>
-        </div>
-     <div class="coding25">
-       <code>   &lt;img src=&quot;1.jpg&quot; alt=&quot;ICED LEMON SODA&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding26">
-       <code>   &lt;p&gt;The Natural World Volume&lt;/p&gt;  &lt;p&gt;CA $12.00&lt;/p&gt;</code>
-        </div>
-     <div class="coding27">
-      <code>  &lt;/figure&gt;</code>
-      </div>
-     <div class="coding28">
-    <code>  &lt;/div&gt;</code>
-  </div>
-     <div class="coding29">
- <code>  &lt;div class=&quot;box5&quot;&gt;</code>
-  </div>
-     <div class="coding30">
-    <code>      &lt;figure&gt;</code>
-        </div>
-     <div class="coding31">
-      <code>    &lt;img src=&quot;7.jpg&quot; alt=&quot;YOYO TONIC&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding32">
-        <code>  &lt;p&gt;The Wood Volume&lt;/p&gt;  &lt;p&gt;CA $12.00&lt;/p&gt;</code>
-        </div>
-     <div class="coding33">
-      <code>  &lt;/figure&gt;</code>
-      </div>
-     <div class="coding34">
-      <code>  &lt;/div&gt;</code>
-</div>
-     <div class="coding35">
- <code> &lt;div class=&quot;box5&quot;&gt;</code>
-</div>
-     <div class="coding36">
-          <code>  &lt;figure&gt;</code>
-          </div>
-     <div class="coding37">
-       <code>   &lt;img src=&quot;6.jpg&quot; alt=&quot;ESPRESSO&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding38">
-       <code>    &lt;p&gt;The Winter Volume&lt;/p&gt;  &lt;p&gt;CA $12.00&lt;/p&gt;</code>
-         </div>
-     <div class="coding39">
-      <code>  &lt;/figure&gt;</code>
-      </div>
-     <div class="coding40">
-   <code> &lt;/div&gt;</code>
-  </div>
-     <div class="coding1">
-   <code> &lt;/div&gt;</code>
-  </div>
-     <div class="coding1">
-   <code> &lt;div class=&quot;shop3&quot;&gt;</code>
-  </div>
-     <div class="coding1">
-    <code>  &lt;div class=&quot;box7&quot;&gt;</code>
-    </div>
-     <div class="coding1">
-      <code>    &lt;figure&gt;</code>
-        </div>
-     <div class="coding1">
-        <code>  &lt;img src=&quot;5.jpg&quot; alt=&quot;AMERICANO&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding1">
-       <code>   &lt;p&gt;The Great Outdoors Volume&lt;/p&gt;  &lt;p&gt;CA $12.00&lt;/p&gt;</code>
-        </div>
-     <div class="coding1">
-      <code>  &lt;/figure&gt;</code>
-      </div>
-     <div class="coding1">
-    <code>  &lt;/div&gt;</code>
-    </div>
-     <div class="coding1">
 
-   <code>  &lt;div class=&quot;box8&quot;&gt;</code>
-   </div>
-     <div class="coding1">
-      <code>    &lt;figure&gt;</code>
-        </div>
-     <div class="coding1">
-       <code>   &lt;img src=&quot;4.jpg&quot; alt=&quot;LATTE&quot; height=&quot;300&quot;&gt;</code>
-        </div>
-     <div class="coding1">
-       <code>   &lt;p&gt;The Night Volue&lt;/p&gt; &lt;p&gt;SOLD OUT&lt;/p&gt;</code>
-        </div>
-     <div class="coding1">
-        <code>  &lt;/figure&gt;</code>
-        </div>
-     <div class="coding1">
-        <code>  &lt;/div&gt;</code>
-        </div>
-     <div class="coding1">
 
-       <code>  &lt;div class=&quot;box9&quot;&gt;</code>
-       </div>
-     <div class="coding1">
-          <code>    &lt;figure&gt;</code>
-     <div class="coding1">
-          <code>    &lt;img src=&quot;3.jpg&quot; alt=&quot;LATTE&quot; height=&quot;300&quot;&gt;</code>
-            </div>
-     <div class="coding1">
-           <code>  &lt;p&gt;The Eight Volue&lt;/p&gt; &lt;p&gt;SOLD OUT&lt;/p&gt;</code>
-            </div>
-     <div class="coding1">
-          <code>    &lt;/figure&gt;</code>
-            </div>
-     <div class="coding1">
-           <code>   &lt;/div&gt;</code>
-            </div>
-     <div class="coding1">
-          <code>   &lt;/div&gt; </code>
+					<footer id="footer">
+						<div class="container">
+					<div class="footer_box">
+						<div class="footer_box1">
+						<p>&copy; 2019, Another Escape</p>
+						<p>All Rights Reserved.</p>
+						<div class="footer_logo">
+							  <a href="website.html">
+							<img class="logo_big" src="images/logo_big.png" alt="logo with larger font">
+						</a>
+					  </div>
+						</div>
 
-     </div>
-     <div class="coding1">
-         <code>   &lt;/section&gt;</code>
-    </div>
+						<div class="footer_box2">
+						<p> <a href="about.html">Terms of Use</a></p>
+						<p> <a href="about.html">Privacy Policy</a></p>
+						<p> <a href="about.html">Cookies</a></p>
+						<p> <a href="contact.html">Contact</a></p>
+						</div>
 
-</div>
+						<div class="footer_box3">
+						<p> <a href="styleguide.html">Styleguide</a></p>
+						<p> <a href="citation.html">Citations</a></p>
+						<p> <a href="https://github.com/githubkylie/IAT339-Project2.git">Git Repository</a></p>
+						<div class="footer_social_media_logo">
 
-</div>
+						<a href="website.html"><i class="fab fa-facebook-f text-success"></i></a>
 
-<section id="citations">
-  <h2 id="cita">Citations</h2>
+						<a href="website.html"><i class="fab fa-twitter text-success"></i></a>
 
-  <ul>
-    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">Google Font</a></li>
-    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-
-    <li>  <strong>[ALL figures.]</strong>(n.d) Retrieved from<a href="https://anotherescape.com">URL</a></li>
-
-  </ul>
-
-</section>
+						<a href="website.html"><i class="fab fa-instagram text-success"></i></a>
+						<div class="footer_mobile_logo">
+							  <a href="website.html">
+							 <img class="logo_small" src="images/logo_small.png" alt="logo with smaller font">
+						 </a>
+					</div>
+					</div>
+					</div>
+					</div>
+					</div>
+					</footer>
 
 
 

@@ -29,10 +29,10 @@
 	 <i class="fas fa-bars text-success"></i>
  </label>
 		 <ul class="menu">
-			<li> <a href="shop.html">Shop</a></li>
-			<li> <a href="about.html">About</a></li>
-			<li> <a href="event.html">Event</a></li>
-			<li> <a href="contact.html">Contact</a></li>
+			<li> <a href="styleguide.html">Styleguide</a></li>
+			<li> <a href="shop-code.html">Shop</a></li>
+			<li> <a href="cart-code.html">Cart</a></li>
+			<li> <a href="checkout-code.html">Checkout</a></li>
 			<!--<li> <a class="nav-button" href="contact.html">Contact</a></li>-->
 				<li> <label for="check" class="hide-menu-button">
 					 <!--https://fontawesome.com/icons/times?style=solid-->
@@ -45,31 +45,28 @@
 	<!-- INTERACTIVE ELEMENTS SECTION // -->
 	<section id="interactive_elements">
 
-		<div class="header">
 			<h2>Interactive Elements</h2>
-		</div>
 
-		<div class="header3">
-			<h3 >In-text link</h3>
+			<h3>In-text link</h3>
 			<p>This is an <a href="#"> in-text link</a>.</p>
-		</div>
 
 			<h4>Sample Code</h4>
 			<div class="sample-code">
 				<code>&lt;p&gt;This is an&lt;a  href="index.html"&gt;in-text link&lt;/a&gt;&lt;/p&gt;</code>
 			</div>
 
-		<div class="header3">
 			<h3>Navigation Link</h3>
-		</div>
-		<div class="top1" >
-			<nav class="main_nav">
-				<a class="main_nav" href="#">ABOUT</a>
-			</nav>
-		</div>
+  <div class="header_nav">
+		<ul class="menu">
+			<li> <a href="shop.html">Shop</a></li>
+ 		 <li> <a href="#"></a></li>
+ 		 <li> <a href="#"></a></li>
+ 		 <li> <a href="#"></a></li>
+	 </ul>
+ </div>
 
 		<h4>CSS Selectors</h4>
-		<p>.main_nav</p>
+		<p>.header_nav, .menu</p>
 
 			<h4>Sample Code</h4>
 			<div class="sample-code">
@@ -80,35 +77,28 @@
 			&lt;/div&gt;</code>
 		</div>
 
-
-
-
-		<div class="header3">
-			<h3 id="sibmit">Submit/Reset Buttons</h3>
-		</div>
+			<h3>Submit/Reset Buttons</h3>
 		<a class="button-sub" href="#">Submit</a>
-		<button class="button-box">View all featured stories</button>
+
+		<h4>CSS Selectors</h4>
+		<p>.button-sub</p>
 
 			<h4>Sample Code</h4>
 			<div class="sample-code">
 			<code>&lt;a class="button-sub" href="#"&gt;Submit &lt;/a &gt;</code>
 		</div>
 
-		<div class="header3">
 			<h3>Text Input Field with Label</h3>
-		</div>
 		<form class="my-form">
-			<div class="container">
 			<div>
 			<label for="first-name-input">First Name</label>
 			<input id="first-name-input" type="text" name="first-name">
 		</div>
-			<div>
-			<label for="last-name-input">Last Name</label>
-			<input id="last-name-input" type="text" name="last-name">
+
+		</form>
 			<div class="css-selector">
 			<h4>CSS selector</h4>
-			<p>#first-name-input[type="text"]</p>
+			<p>.my-form, #first-name-input[type="text"]</p>
 			<h4>Sample code</h4>
 				<div class="sample-code">
 			<!-- IAT339 P1-Style_Guide_Template -->
@@ -118,10 +108,12 @@
 			</code>
 		</div>
 			</div>
-			</div>
+			<form class="my-form">
 			<div>
 				<label for="text-area">Message</label>
 				<textarea id="text-area" name="message"></textarea>
+			</div>
+			</form>
 				<div class="css-selector">
 				<h4>CSS selector</h4>
 				<p>.my-form textarea</p>
@@ -134,13 +126,11 @@
 				</code>
 			</div>
 				</div>
-		</div>
-	</div>
-	</form>
+
 
 
 		<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
-		  <div class="container">
+
 		        <h3>Radio Button with Label</h3>
 		        <label class="radiobutton">Choice 1
 		          <input type="radio" checked="checked" name="radio">
@@ -164,41 +154,34 @@
 		        </code>
 		      </div>
 		        </div>
-		      </div>
 
+   <h3>Numbered Lists</h3>
 
-		<div class="header3">
-			<h3>Numbered Lists</h3>
-		</div>
-		<ol class="num_list">
-			<li>Volume one</li>
-			<li>Volume two</li>
-			<li>Volume three</li>
-			<li>Volume four</li>
-			<li>Volume five</li>
-		</ol>
+  <ol>
+   <li>Volume one</li>
+   <li>Volume two</li>
+   <li>Volume three</li>
+  </ol>
 
+   <h4>Sample Code</h4>
+ <div class="sample-code">
+   <code>&lt;ol class=&quot;num_list&quot;&gt;<br>
+    &lt;li&gt;Volume one&lt;/li&gt;<br>
+    &lt;li&gt;Volume two&lt;/li&gt;<br>
+    &lt;li&gt;Volume three&lt;/li&gt;<br>
+    &lt;/ol&gt;</code>
+  </div>
 
-			<h4>Sample Code</h4>
-	<div class="sample-code">
-			<code>&lt;ol class=&quot;num_list&quot;&gt;<br>
-				&lt;li&gt;Volume one&lt;/li&gt;<br>
-				&lt;li&gt;Volume two&lt;/li&gt;<br>
-				&lt;li&gt;Volume three&lt;/li&gt;<br>
-				&lt;li&gt;Volume four&lt;/li&gt; <br>
-				&lt;li&gt;Volume five&lt;/li&gt;<br>
-				&lt;/ol&gt;</code>
-		</div>
-
-		<div class="header3">
 			<h3>Image as a Link</h3>
-		</div>
-		<div class="mag">
-			<a href="#"><img src="images/water_volume.jpeg" alt="The Water Volume" width=250 ></a>
-		</div>
+			<div class="overlay">
+				<a href="#">
+				<img class="shop_img"  src="images/water_volume.jpeg" alt="The Water Volume" >
+			</a>
+			</div>
+
 		<div class="css-selector">
 		<h4>CSS selector</h4>
-		<p>.mag</p>
+		<p>.overlay, .shop_img</p>
 		<div class="coding">
 			<h4>Sample Code</h4>
 			<div class="sample-code">
@@ -207,6 +190,7 @@
 				&lt;a href=&quot;#&quot;&gt;<br>
 				&lt;img src=&quot;water.jpeg&quot; alt=&quot;scuba_diving&quot; width=250 &gt;&lt;/a&gt;<br>
 				&lt;/div&gt;
+			</code>
 		</div>
 
 
@@ -214,23 +198,25 @@
 
 	<!-- TEXT ELEMENTS SECTION // -->
 	<section id="text_elements">
-		<div class="header">
+
 			<h2>Text Elements</h2>
-		</div>
-		<div class="header3">
+
 			<h3>Headings</h3>
+
+		<h1>Heading1 (Slogan)</h1>
+		<h2>Heading2 (Section headings)</h2>
+		<h3>Heading3 (Sub section headings)</h3>
+		<div class="event">
+		<h3>Heading3 Alternative (Sub section headings)</h3>
 		</div>
-		<h1>Heading1</h1>
-		<h2>Heading2</h2>
-		<h3>Heading3</h3>
-		<h4>Heading4</h4>
+		<h4>Heading4 (Secondary Sub section headings)</h4>
 
 			<h4>Sample Code</h4>
 			<div class="sample-code">
-			<code>&lt;h1&gt;Heading1&lt;/h1&gt;<br>
-				&lt;h2&gt;Heading2&lt;/h2&gt;<br>
-				&lt;h3&gt;Heading3&lt;/h3&gt;<br>
-				&lt;h4&gt;Heading4&lt;/h4&gt;</code>
+			<code>&lt;h1&gt;Heading1 (Slogan)&lt;/h1&gt;<br>
+				&lt;h2&gt;Heading2 (Section headings)&lt;/h2&gt;<br>
+				&lt;h3&gt;Heading3 (Sub section headings)&lt;/h3&gt;<br>
+				&lt;h4&gt;Heading4 (Secondary Sub section headings)&lt;/h4&gt;</code>
 		</div>
 
 		<div class="header3">
@@ -251,25 +237,39 @@
 
 	<!-- COMBINED ELEMENTS SECTION // -->
 	<section id="combined_elements">
-		<div class="header">
+
 			<h2>Combined Elements</h2>
-		</div>
-		<div class="header3">
+
 			<h3>Main Navigation</h3>
-		</div>
-		<div class="top1">
-			<nav class="main_nav">
-				<a class="main_nav" href="index.html">HOME</a>
-				<a class="main_nav" href="shop.html">SHOP</a>
-				<a class="main_nav" href="#">ABOUT</a>
-				<a class="main_nav" href="#">CONTACT</a>
-				<a class="main_nav" href="#">SEARCH</a>
-			</nav>
-		</div>
+
+			<div class="header_nav">
+		  <div class="logo">
+		  <a href="website.html">
+		   <img class="logo_big" src="images/logo_big.png" alt="logo with larger font"></a>
+			<a> <img class="logo_small" src="images/logo_small.png" alt="logo with smaller font"></a>
+		 </div>
+		 <input type="checkbox" id="check">
+		 <label for="check" class="show-menu-button">
+		   <!--https://fontawesome.com/icons/bars?style=solid-->
+		   <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+		   <i class="fas fa-bars text-success"></i>
+		 </label>
+		     <ul class="menu">
+					<li> <a href="shop.html">Shop</a></li>
+					<li> <a href="about.html">About</a></li>
+					<li> <a href="event.html">Event</a></li>
+					<li> <a href="contact.html">Contact</a></li>
+					<!--<li> <a class="nav-button" href="contact.html">Contact</a></li>-->
+		        <li> <label for="check" class="hide-menu-button">
+		           <!--https://fontawesome.com/icons/times?style=solid-->
+		           <i class="fas fa-times text-success"></i>
+		         </label></li>
+		    </ul>
+		 </div>
 	</section>
 	<div class="css-selector">
 	<h4>CSS selector</h4>
-	<p>.main-nav</p>
+	<p>.header_nav, .menu</p>
 			<h4>Sample Code</h4>
 			<div class="sample-code">
 			<code>&lt;nav class=&quot;main_nav&quot;&gt;<br>
@@ -370,40 +370,35 @@
 
 		</div>
 
-		<div class="header3">
 			<h3>Potential imagery and art direction</h3>
-		</div>
 		<div class="art">
-			<img class="potentialimg" src="images/Jake-Baggaley.jpg" alt="Baggaley" >
-
 			<p>We use a lot of pictures of outdoor activities and stories about people. The Colour of the images has nothing to do with the website's Colour palettes. We want this pictures to be clear, high quality and real.</p>
+			<img class="potentialimg" src="images/Jake-Baggaley.jpg" alt="Baggaley" >
 		</div>
 
 	</section>
 
 	<!-- //BRAND INFORMATION -->
 	<section id="brand_information">
-		<div class="header">
+
 			<h2>Basic Branding Ideas</h2>
-		</div>
-		<div class="header3">
+
 			<h3>What does the company do, or offer?</h3>
-		</div>
+
 		<p>Another Escape is a magazine about outdoor life and creative culture. Explore, innovate, and discover the small details of a happy life, with a gentle and humble attitude, to seek a positive and fulfilling source of life.</p>
 
-		<div class="header3">
 			<h3>Who is the company to potential customers? (as a person)</h3>
-		</div>
+
 		<p>Target customers is the people who likes outdoor life and creation. They can be students, businessmen, housewives, and other people of any profession. Although they live in the reinforced concrete city and are lost in the electronic world, they have a yearning for nature and a passion for exploration. </p>
 
-		<div class="header3">
+
 			<h3>Why might this company entice someone to purchase a product or service</h3>
-		</div>
+
 		<p>Another Escape has the people who love nature and their passionate stories, and pretty pictures. Reader will have the inspiration and courage when they finish the magzine. They will feel like they just escape the city life in a monment, hide in the nature. This magazine can inspire readers, to make them have a dream.</p>
 
 	</section>
 </div>
-
+</div>
 
 
 

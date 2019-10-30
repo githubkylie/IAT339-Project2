@@ -15,7 +15,7 @@
    del, dfn, em, img, ins, kbd, q, s, samp,
    small, strike, strong, sub, sup, tt, var,
    b, u, i, center,
-   dl, dt, dd, ol, ul, li,
+   dl, dt, dd, ul, li,
    fieldset, form, label, legend,
    table, caption, tbody, tfoot, thead, tr, th, td,
    article, aside, canvas, details, embed,
@@ -33,7 +33,7 @@
      display: block;
    }
 
-   ol, ul {
+   ul {
      list-style: none;
    }
    blockquote, q {
@@ -118,6 +118,9 @@
   .hide-menu-button:hover{
     color:#145374;
   }
+  .menu a:focus{
+    color:black;
+  }
   #check{
     position: absolute;
     visibility: hidden;
@@ -128,6 +131,81 @@
   }
   #citation_list h2{
     margin-bottom: 30px;
+  }
+  #interactive_elements h2{
+    margin-bottom: 5px;
+  }
+  #text_elements h2{
+    margin-top:10px;
+    margin-bottom: 5px;
+  }
+  #combined_elements h2{
+    margin-top:30px;
+    margin-bottom: 5px;
+  }
+  #design_elements h2{
+    margin-top:30px;
+    margin-bottom: 5px;
+  }
+  #brand_information h2{
+    margin-top:30px;
+    margin-bottom: 5px;
+  }
+  #interactive_elements h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #text_elements h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #combined_elements h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #design_elements h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #brand_information h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #interactive_elements h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #text_elements h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #combined_elements h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #design_elements h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #brand_information h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #interactive_elements .button-sub{
+    width:25%;
+  }
+  #interactive_elements .header_nav{
+    border: 1px solid #999;
+  }
+  #combined_elements .header_nav{
+    border: 1px solid #999;
+  }
+  #interactive_elements form{
+    width:75%;
+  }
+  #interactive_elements img{
+    width: 25%;
+    height: auto;
   }
   @media screen and (max-width: 767px){
     .show-menu-button, .hide-menu-button{
@@ -208,26 +286,14 @@
   h1{
     color:#000;
     font-size:30px;
-    letter-spacing: 0.05em;
-  }
-
-  div.header h2 {
-    margin-top:30px;
-    width:100%;
-    padding-bottom:1em;
-    color:#145374;
   }
 
   h2{
+   margin-top:30px;
    color:#145374;
    font-size:25px;
-
  }
 
- div.header3 {
-  color:#5588a3;
-  margin-top:30px;
-}
 
 h3{
   color:#5588a3;
@@ -267,26 +333,23 @@ h2#intro{
 }
 
 @media screen and (min-width:768px){
-  #story{
-    margin-left:10%;
-     margin-right:10%;
-  }
 
-  .story{
+  .story-box{
     display:flex;
+    margin-top:30px;
   }
 
-  div .story1{
+ .story1{
     margin-right:2%;
     width:100%;
   }
 
-  div .story2{
+  .story2{
     width:100%;
     margin-right:2%;
   }
 
-  div .story3{
+  .story3{
     width:100%;
   }
 
@@ -306,32 +369,28 @@ h2#intro{
 
 
 @media screen and (max-width:767px){
- #story{
-    margin-left:10%;
-     margin-right:10%;
-  }
 
-   .story{
+   .story-box{
     display:block;
-
+    margin-top: 30px;
   }
 
   .story div{
    width:100%;
   }
 
-  div .story1{
+  .story1{
     width:100%;
     margin-bottom: 15px;
   }
 
-  div .story2{
+  .story2{
     width:100%;
     margin-bottom: 15px;
 
   }
 
-  div .story3{
+  .story3{
     width:100%;
     margin-bottom: 15px;
   }
@@ -563,9 +622,10 @@ width:100%;
   margin-top: 0;
 }
 .sample-code{
-  background-color: #d8d8d8;
+  background-color: rgb(153,153,153,0.5);
   color: #000000;
   padding:1em;
+  margin-bottom: 10px;
 }
 
 .column-labels{
@@ -577,9 +637,7 @@ width:100%;
   margin-left: 0;
   width:100%;
 }
-#checkout-cart{
-  margin-top: 30px;
-}
+
 .product{
   display:flex;
   justify-content: space-around;
@@ -736,51 +794,6 @@ input[type=number]
 
 .button-sub:focus{
   background-color:#000;
-}
-
-div label{
-  /*display:block;*/
-  color:black;
-}
-div input#radio1{
-  background-color:#00334e;
-  margin:1em;
-}
-
-div input#radio2{
-  background-color:#00334e;
-  margin:1em;
-}
-
-div input#radio3{
-  background-color:#00334e;
-  margin:1em;
-}
-div input#radio4{
-  background-color:#00334e;
-  margin:1em;
-}
-
-div input#radio5{
-  background-color:#00334e;
-  margin:1em;
-}
-div input#radio6{
-  background-color:#00334e;
-  margin:1em;
-}
-.mag{
-  width:100%;
-
-}
-.mag:hover{
-  opacity: 0.5;
-
-}
-
-ol .num_list{
-  display:block;
-  margin:1em;
 }
 
 section .top1{
@@ -1425,10 +1438,6 @@ div.color{
   }
 }
 
-div.art p {
-  width:35%;
-}
-
 div.art img{
  max-width:50%;
 
@@ -1679,9 +1688,7 @@ div.art img{
     font-size:0.9em;
   }
 }
-#event{
-  margin-top: 30px;
-}
+
 .event1{
   display:flex;
   width:100%;
@@ -1724,7 +1731,7 @@ div.art img{
 
 }
 
-#event h3{
+.event h3{
   color:black;
 }
 .event_date{
