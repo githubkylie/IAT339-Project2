@@ -1440,7 +1440,7 @@ div.color{
 
 div.art img{
  max-width:50%;
-
+margin-top:2%;
 }
 
 
@@ -1734,6 +1734,7 @@ div.art img{
 .event h3{
   color:black;
 }
+
 .event_date{
     margin-top: 10px;
 }
@@ -1786,3 +1787,5 @@ div.art img{
     cursor: pointer;
   }
 }
+
+

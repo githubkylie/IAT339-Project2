@@ -64,6 +64,15 @@
  		 <li> <a href="#"></a></li>
 	 </ul>
  </div>
+<h4>Sample Code</h4>
+			<div class="sample-code">
+				<code>
+					&lt;div class=&quot;header_nav&quot;&gt;<br>
+		&lt;ul class=&quot;menu&quot;&gt;<br>
+			&lt;li&gt; &lt;a href=&quot;shop.html&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
+	 &lt;/ul&gt;<br>
+ &lt;/div&gt;</code>
+			</div>
 
 		<h4>CSS Selectors</h4>
 		<p>.header_nav, .menu</p>
@@ -116,7 +125,7 @@
 			</form>
 				<div class="css-selector">
 				<h4>CSS selector</h4>
-				<p>.my-form textarea</p>
+				<p>.my-form text-area</p>
 				<h4>Sample code</h4>
 					<div class="sample-code">
 				<!-- IAT339 P1-Style_Guide_Template -->
@@ -147,10 +156,14 @@
 		          <div class="sample-code">
 		        <!-- IAT339 P1-Style_Guide_Template -->
 		        <code>
-		            &lt;label class="radiobutton"&gt;Choice 1<br>
-		            &nbsp;&lt;input type="radio" checked="checked" name="radio"&gt;<br>
-		            &nbsp;&lt;span class="checkmark">&lt;/span&gt;<br>
-		            &lt;/label&gt;
+		           &lt;label class=&quot;radiobutton&quot;&gt;Choice 1<br>
+		          &lt;input type=&quot;radio&quot; checked=&quot;checked&quot; name=&quot;radio&quot;&gt;<br>
+		          &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt;<br>
+		        &lt;/label&gt;<br>
+		        &lt;label class=&quot;radiobutton&quot;&gt;Choice 2<br>
+		          &lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt;<br>
+		          &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt;<br>
+		        &lt;/label&gt;
 		        </code>
 		      </div>
 		        </div>
@@ -165,7 +178,7 @@
 
    <h4>Sample Code</h4>
  <div class="sample-code">
-   <code>&lt;ol class=&quot;num_list&quot;&gt;<br>
+   <code>&lt;ol&gt;<br>
     &lt;li&gt;Volume one&lt;/li&gt;<br>
     &lt;li&gt;Volume two&lt;/li&gt;<br>
     &lt;li&gt;Volume three&lt;/li&gt;<br>
@@ -186,10 +199,11 @@
 			<h4>Sample Code</h4>
 			<div class="sample-code">
 			<code>
-				&lt;div class="mag"&gt;<br>
+				&lt;div class=&quot;overlay&quot;&gt;<br>
 				&lt;a href=&quot;#&quot;&gt;<br>
-				&lt;img src=&quot;water.jpeg&quot; alt=&quot;scuba_diving&quot; width=250 &gt;&lt;/a&gt;<br>
-				&lt;/div&gt;
+				&lt;img class=&quot;shop_img&quot;  src=&quot;images/water_volume.jpeg&quot; alt=&quot;The Water Volume&quot; &gt;
+			&lt;/a&gt;<br>
+			&lt;/div&gt;<br>
 			</code>
 		</div>
 
@@ -214,9 +228,12 @@
 			<h4>Sample Code</h4>
 			<div class="sample-code">
 			<code>&lt;h1&gt;Heading1 (Slogan)&lt;/h1&gt;<br>
-				&lt;h2&gt;Heading2 (Section headings)&lt;/h2&gt;<br>
-				&lt;h3&gt;Heading3 (Sub section headings)&lt;/h3&gt;<br>
-				&lt;h4&gt;Heading4 (Secondary Sub section headings)&lt;/h4&gt;</code>
+		&lt;h2&gt;Heading2 (Section headings)&lt;/h2&gt;<br>
+		&lt;h3&gt;Heading3 (Sub section headings)&lt;/h3&gt;<br>
+		&lt;div class=&quot;event&quot;&gt;<br>
+		&lt;h3&gt;Heading3 Alternative (Sub section headings)&lt;/h3&gt;<br>
+		&lt;/div&gt;<br>
+		&lt;h4&gt;Heading4 (Secondary Sub section headings)&lt;/h4&gt;</code>
 		</div>
 
 		<div class="header3">
@@ -272,13 +289,31 @@
 	<p>.header_nav, .menu</p>
 			<h4>Sample Code</h4>
 			<div class="sample-code">
-			<code>&lt;nav class=&quot;main_nav&quot;&gt;<br>
-				&lt;a class=&quot;main_nav&quot; href=&quot;index.html&quot;&gt;HOME&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot; href=&quot;shop.html&quot;&gt;SHOP&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot; href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot;href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;<br>
-				&lt;a class=&quot;main_nav&quot;href=&quot;#&quot;&gt;SEARCH&lt;/a&gt;<br>
-				&lt;/nav&gt;</code>
+			<code>
+			&lt;div class=&quot;header_nav&quot;&gt;<br>
+		  &lt;div class=&quot;logo&quot;&gt;<br>
+		  &lt;a href=&quot;website.html&quot;&gt;<br>
+		   &lt;img class=&quot;logo_big&quot; src=&quot;images/logo_big.png&quot; alt=&quot;logo with larger font&quot;&gt;&lt;/a&gt;<br>
+			&lt;a&gt; &lt;img class=&quot;logo_small&quot; src=&quot;images/<br>logo_small.png&quot; alt=&quot;logo with smaller font&quot;&gt;&lt;/a&gt;
+		 &lt;/div&gt;<br>
+		 &lt;input type=&quot;checkbox&quot; id=&quot;check&quot;&gt;<br>
+		 &lt;label for=&quot;check&quot; class=&quot;show-menu-button&quot;&gt;<br>
+		   &lt;!--https://fontawesome.com/icons/bars?style=solid--&gt;<br>
+		   &lt;!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons--&gt;<br>
+		   &lt;i class=&quot;fas fa-bars text-success&quot;&gt;&lt;/i&gt;<br>
+		 &lt;/label&gt;<br>
+		     &lt;ul class=&quot;menu&quot;&gt;<br>
+					&lt;li&gt; &lt;a href=&quot;shop.html&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
+					&lt;li&gt; &lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+					&lt;li&gt; &lt;a href=&quot;event.html&quot;&gt;Event&lt;/a&gt;&lt;/li&gt;<br>
+					&lt;li&gt; &lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+					&lt;!--&lt;li&gt; &lt;a class=&quot;nav-button&quot; href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;--&gt;<br>
+		        &lt;li&gt; &lt;label for=&quot;check&quot; class=&quot;hide-menu-button&quot;&gt;<br>
+		           &lt;!--https://fontawesome.com/icons/times?style=solid--&gt;<br>
+		           &lt;i class=&quot;fas fa-times text-success&quot;&gt;&lt;/i&gt;<br>
+		         &lt;/label&gt;&lt;/li&gt;<br>
+		    &lt;/ul&gt;<br>
+		 &lt;/div&gt;</code>
 		</div>
 </div>
 
@@ -311,7 +346,7 @@
 			<div class="color1">
 				<figure >
 					<img class="color" src="images/blackcolor.jpg" alt="Paragraph color" width="200">
-					<p>Paragraph & Hover link</p>
+					<p>Paragraph & Sub Heading3 </p>
 					<p>#000000</p>
 				</figure>
 			</div>
@@ -319,7 +354,7 @@
 			<div class="color2">
 				<figure >
 					<img class="color" src="images/color4.jpg" alt="Headings color" height="200">
-					<p>Heading 1</p>
+					<p>Heading1</p>
 					<p>#00334e</p>
 				</figure>
 			</div>
@@ -328,7 +363,7 @@
 			<div class="color3">
 				<figure >
 					<img class="color" src="images/color3.jpg" alt="Heading 1 & Navigation color" height="200">
-					<p>Heading 2 & Navigation</p>
+					<p>Heading2 & Hover link</p>
 					<p>#145374</p>
 				</figure>
 			</div>
@@ -336,7 +371,7 @@
 			<div class="color4">
 				<figure >
 					<img class="color" src="images/color2.jpg" alt="Heading 3 color" height="200">
-					<p>Heading 3</p>
+					<p>Heading3</p>
 					<p>#5588a3</p>
 				</figure>
 			</div>
@@ -345,22 +380,38 @@
 			<div class="color5">
 				<figure >
 					<img class="color" src="images/color5.jpg" alt="Heading 4 color" height="200">
-					<p>Heading 4</p>
+					<p>Heading4</p>
 					<p>#87c0cd</p>
 				</figure>
 			</div>
 
-
-			<div class="color6">
+<div class="color6">
 				<figure >
-					<img class="color" src="images/footercolor.jpg" alt="Citation Background color" height="200">
-					<p>Citation Background </p>
+					<img class="color" src="images/link_color.jpg" alt="Citation Background color" height="200">
+					<p>Link</p>
+					<p>#999999</p>
+				</figure>
+			</div>
+
+			<div class="color7">
+				<figure >
+					<img class="color" src="images/button_color.jpg" alt="Button color" height="200">
+					<p>Button & Sample code</p>
+					<p>#989899</p>
+				</figure>
+			</div>
+
+
+			<div class="color8">
+				<figure >
+					<img class="color" src="images/footercolor.jpg" alt="Citation Background" height="200">
+					<p>Product Background</p>
 					<p>#d8d8d8</p>
 				</figure>
 			</div>
 
 
-			<div class="color7">
+			<div class="color9">
 				<figure >
 					<img class="color" src="images/color1.jpg" alt="Background color" height="200">
 					<p>Background</p>
