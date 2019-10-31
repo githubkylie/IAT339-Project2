@@ -628,6 +628,8 @@ width:100%;
   margin-bottom: 10px;
 }
 
+
+
 .column-labels{
   display:flex;
   margin-bottom: 8px;
@@ -1249,7 +1251,7 @@ section .top1{
   }
 
   #shop{
-    margin-bottom:2em;
+    margin-bottom:5%;
   }
 
   .shop_img{
@@ -1260,6 +1262,9 @@ section .top1{
 
 
 @media screen and (min-width:768px){
+#shop{
+    margin-bottom:5%;
+  }
 
   .shop1{
     margin-top: 2em;
@@ -1321,8 +1326,6 @@ section .top1{
 
 
 }
-
-
 
 }
 
@@ -1598,6 +1601,7 @@ margin-top:2%;
     display: none;
   }
 
+
   .product-price{
     display:none;
   }
@@ -1789,3 +1793,6 @@ margin-top:2%;
 }
 
 
+#sample-code{
+  margin-top:5%;
+}
