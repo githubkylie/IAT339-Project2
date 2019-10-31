@@ -126,6 +126,11 @@
     visibility: hidden;
     z-index: -1111;
   }
+  #check-styleguide{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
   #citation_list ul li{
     display: block;
   }
@@ -231,12 +236,16 @@
       padding: 25px;
       padding-right: 43px;
     }
+
     .hide-menu-button{
       position: absolute;
       top: 29px;
       right: 43px;
     }
     #check:checked ~ .menu{
+      right:0;
+    }
+    #check-styleguide:checked ~ .menu{
       right:0;
     }
     .logo_big{
