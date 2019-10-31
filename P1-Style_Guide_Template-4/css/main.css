@@ -1712,6 +1712,12 @@ margin-top:2%;
 
 }
 
+.event3{
+  display:flex;
+  width:100%;
+
+}
+
 .event1 div{
  /*border: 1px solid #eee;*/
  width:100%;
@@ -1723,6 +1729,11 @@ margin-top:2%;
  width:100%;
 }
 
+.event3 div{
+ /*border: 1px solid #eee;*/
+ width:100%;
+}
+
 .event1_img{
   width:100%;
   padding-right: 4%
@@ -1730,6 +1741,12 @@ margin-top:2%;
 }
 
 .event2_img{
+  width:100%;
+  padding-right: 4%
+
+}
+
+.event3_img{
   width:100%;
   padding-right: 4%
 
@@ -1762,6 +1779,11 @@ margin-top:2%;
   .event2{
     display:block;
   }
+
+  .event3{
+    display:block;
+  }
+
   .footer_box{
     display:block;
     font-size: 15pt;
