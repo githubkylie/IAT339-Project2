@@ -1818,3 +1818,8 @@ margin-top:2%;
 #sample-code{
   margin-top:5%;
 }
+#citation_list p{
+  display: list-item;
+  list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+   list-style-position: inside;
+}
